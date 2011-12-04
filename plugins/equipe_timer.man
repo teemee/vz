@@ -1,0 +1,22 @@
+FUNCTION:
+    equipe_timer
+
+VERSION:
+    1.0-fix4-NONSTD
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    's_format_running' - Time format for stale timer
+
+    's_format_stale' - Time format for running timer
+
+    'l_offset' - Timer offset (miliseconds)
+
+    'l_timer_id' - Timer identificator (0..3)
+

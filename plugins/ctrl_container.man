@@ -1,0 +1,18 @@
+FUNCTION:
+    ctrl_container
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    Control container visiblitiy, usefull for turning off container from timeline operations.
+
+NOTES:
+    
+
+PARAMETRS:
+
+    'L_value' - Parent container visiblity control parameter. Set value '_VIS' to enable container or set value '_INV' to disable container
+
+    'l_value' - Parent container visiblity control parameter. Set value 1 to enable container or set value 0 to disable container
+

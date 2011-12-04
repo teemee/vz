@@ -1,0 +1,54 @@
+FUNCTION:
+    ttfont
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    's_font' - Font name
+
+    's_text' - Text content
+
+    'L_center' - Center of image
+
+    'h_colour' - Text's colour (in hex)
+
+    'h_stroke_colour' - Text's stroke colour (in hex)
+
+    'f_line_space' - Line space multiplier
+
+    'l_limit_width' - Limit width of text to expected
+
+    'l_limit_height' - Limit height of text
+
+    'l_break_word' - Break words during wrapping (flag)
+
+    'l_fixed_kerning' - Fixed kerning width (0 if not used)
+
+    'f_advance_ratio' - Advance ratio (char dist mult.)
+
+    'l_height' - Font height
+
+    'l_width' - Font width
+
+    'f_stroke_radius' - Font stroke radius
+
+    'l_stroke_line_cap' - Font stroke line cap style:
+	0 - The end of lines is rendered as a full stop on the last point itself [FT_STROKER_LINECAP_BUTT];
+	1 - The end of lines is rendered as a half-circle around the last point [FT_STROKER_LINECAP_ROUND];
+	2 - The end of lines is rendered as a square around the last point [FT_STROKER_LINECAP_SQUARE];
+
+    'l_stroke_line_join' - Font line join style:
+	0 - Used to render rounded line joins. Circular arcs are used to join two lines smoothly [FT_STROKER_LINEJOIN_ROUND];
+	1 - Used to render beveled line joins; i.e., the two joining lines are extended until they intersect [FT_STROKER_LINEJOIN_BEVEL];
+	2 - Same as beveled rendering, except that an additional line break is added if the angle between the two joining lines is too closed (this is useful to avoid unpleasant spikes in beveled rendering) [FT_STROKER_LINEJOIN_MITER];
+
+    'f_max_width' - Max font width. If defined, scale width to given value
+

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0"?>
+<!--
+	Hinweise:
+	
+	IMMER IN UniCode (UTF 8) Speichern ! Sonst gibts probleme mit den Sonderzeichen
+	
+	0-Punkt eines Objekts festlegen
+	
+		X-Koordinate
+		L = Left
+		C = Center
+		R = Right
+	
+		Y-Koordinate
+		T = Top
+		M = Middle
+		B = Bottom
+-->
+
+
+
+
+<scene>
+<tree visible="1">
+    <container visible="1">
+        <!-- 0-Punkt des Szenefestlegen -->
+        <function name="translate">
+            <!-- Unten Links-->
+			<param name="f_x" value="0"/>
+            <param name="f_y" value="0"/>
+        </function>
+
+        <container visible="1">
+            <!-- Szene hier rein -->
+			
+			<!-- Crawler -->
+			<container visible="1">
+				<function name="translate">
+					<param name="f_x" value="450"/>
+					<param name="f_y" value="93"/>
+				</function>
+				<function name="ttfont_hcrawl" id="crawler">
+					<param name="s_font" value="HelveticaNeueBd"/>
+					<param name="l_height" value="20"/>
+					<param name="h_colour" value="0xFFFFFFFF"/>
+					<param name="l_box_width" value="530"/>
+					<param name="l_loop" value="1"/>
+					<param name="l_interval" value="20"/>
+					<param name="f_speed" value="1.50"/>
+					<param name="f_advance_ratio" value="1.1"/>
+					<param name="s_trig_append" value="Ole ! Ole ! Subber Crawler Text"/>
+				</function>
+			</container>
+
+			<!-- Info -->
+			<container visible="1">
+				<function name="translate">
+					<param name="f_x" value="185"/>
+					<param name="f_y" value="165"/>
+				</function>
+				
+				<!-- Zeile 1 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="0"/>
+					</function>
+					<function name="ttfont" id="InfoZ1">
+						<param name="s_text" value="Jens aus Gruibingen grüßt alle die heute"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="18"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_LT_"/>
+					</function>
+				</container>
+				
+				<!-- Zeile 2 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-25"/>
+					</function>
+					<function name="ttfont" id="InfoZ2">
+						<param name="s_text" value="morgen schon wach sind - warum auch immer :-)"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="18"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_LT_"/>
+					</function>
+				</container>				
+			</container>			
+		
+			<!-- Sendungsname -->
+			<container visible="1">
+				<function name="translate">
+					<param name="f_x" value="213"/>
+					<param name="f_y" value="205"/>
+				</function>
+				<function name="ttfont" id="Sendungsname">
+					<param name="s_text" value="Guten Morgen Filstal"/>
+					<param name="s_font" value="HelveticaNeueBd"/>
+					<param name="l_height" value="15"/>
+					<param name="h_colour" value="0xFF000000"/>
+					<param name="L_center" value="_LB_"/>
+				</function>
+			</container>	
+			
+			<container visible="1">
+			<function name="translate">
+				<param name="f_x" value="450"/>
+				<param name="f_y" value="185"/>
+			</function>
+			<function name="image">
+				<param name="s_filename" value="./projects/guten-morgen-filstal/fips-logo.tga"/>
+				<param name="L_center" value="_LB_"/>
+			</function>
+			</container>
+
+			<!-- Datum & Uhr -->
+			<container visible="1">
+				<function name="translate">
+					<param name="f_x" value="120"/>
+					<param name="f_y" value="225"/>
+				</function>
+				
+				<!-- Uhr -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="0"/>
+					</function>
+					<function name="ttfont" id="uhrzeit">
+						<param name="s_text" value="00:00"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="38"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+					</function>
+					<function name="systime" datatarget="uhrzeit" id="t_uhr">
+						<param name="s_format" value="%H:%M"/>
+					</function> 	
+				</container>
+				
+				<!-- Tag -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-35"/>
+					</function>
+					<function name="ttfont" id="wochentag">
+						<param name="s_text" value="Tach"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="18"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+					</function>
+					<function name="systime" datatarget="wochentag" id="t_tag">
+						<param name="s_format" value="%A"/>
+					</function> 	
+				</container>
+				
+				<!-- Datum -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-60"/>
+					</function>
+					<function name="ttfont" id="datum">
+						<param name="s_text" value="00.00.0000"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="18"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+					</function>
+					<function name="systime" datatarget="datum" id="t_datum">
+						<param name="s_format" value="%d.%m.%Y"/>
+					</function> 
+				</container>
+			</container>
+			
+			<!-- Kontakt -->
+			<container visible="1">
+				<function name="translate">
+					<param name="f_x" value="120"/>
+					<param name="f_y" value="135"/>
+				</function>
+				
+				<!-- Zeile 1 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="0"/>
+					</function>
+					<function name="ttfont" id="KontaktZ1">
+						<param name="s_text" value="Mail ins Studio:"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="12"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_CT_"/>
+					</function>
+				</container>
+				
+				<!-- Zeile 2 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-20"/>
+					</function>
+					<function name="ttfont" id="KontaktZ2">
+						<param name="s_text" value="studio@radiofips.de"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="12"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_CT_"/>
+					</function>
+				</container>
+				
+				<!-- Zeile 3 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-40"/>
+					</function>
+					<function name="ttfont" id="KontaktZ3">
+						<param name="s_text" value="Telefon:"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="12"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_CT_"/>
+					</function>
+				</container>
+				
+				<!-- Zeile 4 -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-60"/>
+					</function>
+					<function name="ttfont" id="KontaktZ4">
+						<param name="s_text" value="07161 - 9142424"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="12"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+						<param name="L_center" value="_CT_"/>
+					</function>
+				</container>				
+			</container>
+			
+			<!-- Hintergrund -->
+			<container visible="1">
+ 				<function name="translate">
+					<param name="f_x" value="0"/>
+					<param name="f_y" value="26"/>
+				</function>
+				<function name="image">
+					<param name="s_filename" value="./projects/guten-morgen-filstal/hintergrund.tga"/>
+					<param name="L_center" value="_LB_"/>
+				</function>
+			</container>
+			
+			<!-- blanking -->
+			<container visible="1">
+ 				<function name="translate">
+					<param name="f_x" value="0"/>
+					<param name="f_y" value="0"/>
+				</function>
+				<function name="rectangle">
+					<param name="f_width" value="720"/>
+					<param name="f_height" value="50"/>
+					<param name="L_center" value="_LB_"/>
+					<param name="f_colour_R" value="0"/>
+					<param name="f_colour_G" value="0"/>
+					<param name="f_colour_B" value="0"/>
+					<param name="f_colour_A" value="255"/>
+					
+				</function>
+			</container>
+			
+			
+			
+        </container>
+		
+    </container>
+</tree>
+<motion></motion>
+</scene>

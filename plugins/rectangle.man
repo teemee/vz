@@ -1,0 +1,28 @@
+FUNCTION:
+    rectangle
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    'f_width' - Width
+
+    'f_height' - Height
+
+    'f_colour_R' - Red colour component
+
+    'f_colour_G' - Green colour component
+
+    'f_colour_B' - Blue colour component
+
+    'f_colour_A' - Alpha colour component
+
+    'L_center' - Center of rectanle
+

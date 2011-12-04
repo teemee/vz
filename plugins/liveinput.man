@@ -1,0 +1,56 @@
+FUNCTION:
+    liveinput
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    Live video input source.
+
+NOTES:
+    Depends on IO driver functionality.
+
+PARAMETRS:
+
+    'l_input' - number of input (1..4)
+
+    'L_center' - centering of image
+
+    'l_flip_v' - flag to vertical flip
+
+    'l_flip_h' - flag to horozontal flip
+
+    'l_offset_y' - texture field number depend dribling (-1, 0, 1)
+
+    'f_offset_y' - rect coordinate Y field number depend dribling [-1.0 .. 1.0]
+
+    'f_x1' - X of left bottom corner (free transorm mode)
+
+    'f_y1' - Y of left bottom corner (free transorm mode)
+
+    'f_z1' - Z of left bottom corner (free transorm mode)
+
+    'f_x2' - X of left upper corner (free transorm mode)
+
+    'f_y2' - Y of left upper corner (free transorm mode)
+
+    'f_z2' - Z of left upper corner (free transorm mode)
+
+    'f_x3' - X of right upper corner (free transorm mode)
+
+    'f_y3' - Y of right upper corner (free transorm mode)
+
+    'f_z3' - Z of right upper corner (free transorm mode)
+
+    'f_x4' - X of right bottom corner (free transorm mode)
+
+    'f_y4' - Y of right bottom corner (free transorm mode)
+
+    'f_z4' - Z of right bottom corner (free transorm mode)
+
+    'l_tr_lod' - Level of triangulation (free transorm mode)
+
+    'l_audio_mute' - Mute audio flag
+
+    'f_audio_level' - Audio mixer level, db (0.0 - no change)
+

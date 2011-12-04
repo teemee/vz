@@ -1,0 +1,129 @@
+﻿<?xml version="1.0"?>
+
+<!--
+TEST CASE:
+
+renderman.load(./text_mask_saple_v01.xml)
+
+
+-->
+
+
+
+<scene>
+
+<!-- objects tree -->
+<tree visible="1">
+
+<container visible="1">
+<!--  ==========================================================================    TITLE PLASHKA   ================================================================   -->
+
+                                  <!-- title clip mask -->
+	<container visible="1">
+		<function name="translate" id="mask_position">
+            <param name="f_x" value="288"/>
+            <param name="f_y" value="360"/>
+		</function>
+        <function name="mask">
+            <param name="l_id" value="2"/>
+            <param name="L_operation" value="_SRC"/>
+        </function>
+		<function name="rectangle" id="mask">
+            <param name="f_width" value="600"/>
+            <param name="f_height" value="720"/>
+            <param name="f_colour_R" value="0.6"/>
+            <param name="f_colour_G" value="0.6"/>
+            <param name="f_colour_B" value="0.1"/>
+            <param name="f_colour_A" value="1"/>
+            <param name="L_center" value="_CM_"/>
+		</function>
+	</container>
+	               <!-- Title Studio Line 01 -->
+    <container visible="1">
+	    <function name="mask">
+            <param name="l_id" value="2"/>
+            <param name="L_operation" value="_TRG"/>
+        </function>
+        <function name="translate" id="title_guest_line_1_position">
+                <param name="f_x" value="360"/>
+                <param name="f_y" value="300"/>
+        </function>
+        <function name="ttfont" id="t_guest_line_1">
+                <param name="s_text" value="Просто зараз відбувається чат"/>
+                <param name="s_font" value="verdanab"/>
+                <param name="l_height" value="20"/>
+                <param name="h_colour" value="0xFFF5F5F5"/>
+                <param name="L_center" value="_CM_"/>
+                <param name="f_max_width" value="460"/>
+        </function>
+    </container>
+		               <!-- Title Studio Line 02 -->
+    <container visible="1">
+	    <function name="mask">
+            <param name="l_id" value="2"/>
+            <param name="L_operation" value="_TRG"/>
+        </function>
+        <function name="translate" id="title_guest_line__position">
+                <param name="f_x" value="360"/>
+                <param name="f_y" value="278"/>
+        </function>
+        <function name="ttfont" id="t_guest_line_2">
+                <param name="s_text" value="з Потапом та Настею Каменських"/>
+                <param name="s_font" value="verdanab"/>
+                <param name="l_height" value="22"/>
+                <param name="h_colour" value="0xFFF5F5F5"/>
+                <param name="L_center" value="_CM_"/>
+                <param name="f_max_width" value="460"/>
+        </function>
+    </container>
+		               <!-- Title Studio Line 03 -->
+    <container visible="1">
+	    <function name="mask">
+            <param name="l_id" value="2"/>
+            <param name="L_operation" value="_TRG"/>
+        </function>
+        <function name="translate" id="title_guest_line_3_position">
+                <param name="f_x" value="360"/>
+                <param name="f_y" value="240"/>
+        </function>
+        <function name="ttfont" id="t_guest_line_3">
+                <param name="s_text" value="наступне включення о 14:20"/>
+                <param name="s_font" value="verdanab"/>
+                <param name="l_height" value="20"/>
+                <param name="h_colour" value="0xFFF5F5F5"/>
+                <param name="L_center" value="_CM_"/>
+                <param name="f_max_width" value="460"/>
+        </function>
+    </container>
+	
+                                  <!--rectangle -->
+	<container visible="1">
+		<function name="translate" id="rectangle_position">
+            <param name="f_x" value="360"/>
+            <param name="f_y" value="260"/>
+		</function>
+		<function name="rectangle" id="rectangle">
+            <param name="f_width" value="600"/>
+            <param name="f_height" value="200"/>
+            <param name="f_colour_R" value="0.8"/>
+            <param name="f_colour_G" value="0.2"/>
+            <param name="f_colour_B" value="0.1"/>
+            <param name="f_colour_A" value="1"/>
+            <param name="L_center" value="_CM_"/>
+		</function>
+	</container>
+<!--  =========================================================================================================================================================================   -->
+</container>
+</tree> 
+
+<motion>
+                            <!-- Title  -->
+       <director id="d_mask" dur="50" loop="1" pos="0" run="1">
+            <param name="tree.function.mask.f_width">
+                <timeline t1="0" t2="01" y1="0" y2="0" f="1"/>
+                <timeline t1="2" t2="20" y1="0" y2="800" f="1"/>
+                <timeline t1="21" t2="42" y1="800" y2="0" f="1"/>
+			</param>
+	</director>
+</motion>
+</scene>

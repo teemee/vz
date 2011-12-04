@@ -1,0 +1,44 @@
+FUNCTION:
+    blend
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    Turn (or override) blending parameters defined by BlendFuncSeparateEXT
+or BlendEquationSeparateEXT
+
+
+NOTES:
+    For description and meaning values of theese functions refer to:
+    BlendFuncSeparateEXT:
+    http://oss.sgi.com/projects/ogl-sample/registry/EXT/blend_func_separate.txt
+
+    BlendEquationSeparateEXT:
+    http://www.opengl.org/registry/specs/EXT/blend_equation_separate.txt
+
+Text parameters supplied as text, i.e
+[...]
+      <param name="s_sfactorRGB" value="ONE_MINUS_DST_ALPHA"/>
+[...]
+
+
+
+PARAMETRS:
+
+    'l_BlendFuncSeparateEXT' - Flag to enable function use
+
+    's_sfactorRGB' - source RGB factor, see BlendFuncSeparateEXT manual
+
+    's_dfactorRGB' - destination RGB factor, see BlendFuncSeparateEXT manual
+
+    's_sfactorAlpha' - source Alpha factor, see BlendFuncSeparateEXT manual
+
+    's_dfactorAlpha' - destination Alpha factor, see BlendFuncSeparateEXT manual
+
+    'l_BlendEquationSeparateEXT' - Flag to enable function use
+
+    's_modeRGB' - modeRGB, see BlendEquationSeparateEXT manual
+
+    's_modeAlpha' - modeAlpha, see BlendEquationSeparateEXT manual
+

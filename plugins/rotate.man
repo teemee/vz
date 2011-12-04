@@ -1,0 +1,22 @@
+FUNCTION:
+    rotate
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    'f_angle' - The angle of rotation, in degrees
+
+    'f_x' - The x coordinates of a vector.
+
+    'f_y' - The y coordinates of a vector.
+
+    'f_z' - The z coordinates of a vector.
+

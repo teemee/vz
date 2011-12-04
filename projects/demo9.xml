@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<scene>
+
+<!--
+
+	*90*		*270*		*450*		*630*
+*96*	png8.png	bmp8.bmp	jpg8.jpg	tga8.tga
+
+*288*	png24.png	bmp24.bmp	jpg24.jpg	tga24.tga
+
+*480*	png32.png					tga32.tga
+
+
+
+-->
+
+<tree visible="1">
+
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="630"/>
+        <param name="f_y" value="96"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/tga8.tga"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="630"/>
+        <param name="f_y" value="288"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/tga24&test.tga"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="630"/>
+        <param name="f_y" value="480"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/tga32.tga"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="90"/>
+        <param name="f_y" value="96"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/png8.png"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="90"/>
+        <param name="f_y" value="288"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/png24.png"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="90"/>
+        <param name="f_y" value="480"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/png32.png"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="450"/>
+        <param name="f_y" value="96"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/jpg8.jpg"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="450"/>
+        <param name="f_y" value="288"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/jpg24.jpg"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="270"/>
+        <param name="f_y" value="96"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/bmp8.bmp"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+<container visible="1">
+    <function name="translate">
+        <param name="f_x" value="270"/>
+        <param name="f_y" value="288"/>
+    </function>
+
+    <container visible="1">
+       <function name="image" id="image1">
+            <param name="s_filename" value="./projects/demo8/bmp24.bmp"/>
+            <param name="L_center" value="_CM_"/>
+        </function>
+    </container>
+</container>
+
+</tree>
+<motion>
+</motion>
+</scene>
+

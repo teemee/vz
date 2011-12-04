@@ -1,0 +1,22 @@
+FUNCTION:
+    mask
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    'l_id' - Mask identificator (value should be between 2..8)
+
+    'l_invert' - Flag to Invert mask
+
+    'l_draw_mask' - Frag to Draw mask
+
+    'L_operation' - Operation definition: '_TRG' - targeting or '_SRC' -  mask source drawing
+

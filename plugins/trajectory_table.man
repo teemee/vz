@@ -1,0 +1,20 @@
+FUNCTION:
+    trajectory_table
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    This plugin perform datasource interface for precomputated static data placed in text file. Each colunm (splited by TAB) is values of parameters. Mapping parameters to column number performed by plugin parameter 's_map', file name of data submitted throw 's_filename' parameter.
+
+NOTES:
+    
+
+PARAMETRS:
+
+    's_filename' - Name of text file with table
+
+    's_map' - Mapping of parameters to col number in text file (e.g 0:f_x;1:f_y)
+
+    'l_index' - Index of table (number of row).
+

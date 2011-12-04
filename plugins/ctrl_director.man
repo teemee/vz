@@ -1,0 +1,24 @@
+FUNCTION:
+    ctrl_director
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    Control director behaviour, usefull for director operation from trajectory.
+
+NOTES:
+    
+
+PARAMETRS:
+
+    's_director' - director name top operate with
+
+    'l_trig_start' - trigger director start
+
+    'l_trig_stop' - trigger director stop
+
+    'l_trig_continue' - trigger director continue
+
+    'l_trig_reset' - trigger director reset
+

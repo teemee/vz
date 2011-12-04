@@ -1,0 +1,21 @@
+FUNCTION:
+    text_seq
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    This plugin perform sequenced text source
+
+NOTES:
+    
+
+
+PARAMETRS:
+
+    's_param' - Target plugin's field name to update
+
+    's_seq' - Sequential
+
+    'l_trig_start' - 
+

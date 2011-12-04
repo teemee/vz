@@ -1,0 +1,70 @@
+FUNCTION:
+    trajectory_live
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    This plugin perform datasource interface of calculated data controlled by approximation function.
+
+NOTES:
+    Some userfull function:
+
+*setup value*:
+
+    SET(<value>)
+
+    example:
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "SET(120);SET(120)"
+
+*linear move to*:
+
+    LINETO(<value>, <speed>, <fields>)
+        if <fields> is zero then <speed> is ignored.
+        <speed> is value per field.
+
+    example:
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "LINETO(180, 1.1, 0);LINETO(121, 1.2, 0)"
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "LINETO(180, 0, 150);LINETO(121, 0, 150)"
+
+*parabolla move to*:
+
+    PARABOLATO(<value>, <fields>, <Tc>, <Vc>)
+        where:
+        <Tc> - center of parabola
+        <Vc> - value in center of parabola
+
+    example:
+        # speed rized
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "PARABOLATO(180,150,1);PARABOLATO(180,150,1)"
+        # speed slowed down
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "PARABOLATO(-200,150,3);PARABOLATO(0,150,3)"
+        # horizontal slowdown, vertial speedup
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "PARABOLATO(0,150,3);PARABOLATO(0,150,1)"
+
+*sequenctial player*:
+
+    SEQ(<FUNC1>[:<FUNC2>[:<FUNCn>]])
+        where:
+        <FUNCi> - function to use
+
+    example:
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "SEQ(PARABOLATO(0,150,1):PARABOLATO(300,150,3));"
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "SEQ(PARABOLATO(0,150,1):PARABOLATO(300,150,3));SEQ(PARABOLATO(0,150,3):PARABOLATO(300,150,1))"
+
+*no operation*:
+
+    NOP(<field>)
+
+    example:
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "SEQ(PARABOLATO(0,150,1):NOP(50):PARABOLATO(300,150,3));"
+        vzCmdSender.exe localhost SET rect_offset_table s_cmd "SEQ(PARABOLATO(0,150,1):NOP(50):PARABOLATO(300,150,3));SEQ(PARABOLATO(0,150,3):NOP(50):PARABOLATO(300,150,1))"
+
+
+
+PARAMETRS:
+
+    's_params_list' - Parameters list to be analized
+
+    's_cmd' - Command body
+

@@ -1,0 +1,22 @@
+FUNCTION:
+    systime
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    's_format' - Time format (see 'strftime' manual for details)
+
+    'l_offset' - Offset in seconds from current time
+
+    'l_PM' - Flag to append 'PM' or 'AM' suffixes
+
+    'l_UTC' - Use UTC time
+

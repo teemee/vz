@@ -1,0 +1,33 @@
+FUNCTION:
+    timer
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    This plugins is used as timer source with variable format supported. Format string defines how timer output will be formatted. Timer internalvalue is measured in miliseconds
+
+NOTES:
+    Some samples format string: 
+    m:SS        - football like timer, "61:00" 
+    HH:MM:SS:FF - SMPTE timecode, "00:01:22:00" 
+    HH:MM:SS:FF - SMPTE timecode, "00:01:22:00" 
+    MM:SS.DDD   - high resulotion with miliseconds
+
+
+PARAMETRS:
+
+    's_format' - Timer format
+
+    'l_trig_start' - Start counting trigger
+
+    'l_trig_stop' - Stop counting trigger
+
+    'l_trig_reset' - Reset values counting trigger
+
+    'l_trig_cont' - Continue counting trigger
+
+    'l_start_value' - Reset values counting trigger
+
+    'l_stop_value' - Continue counting trigger
+

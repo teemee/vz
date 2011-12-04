@@ -1,0 +1,16 @@
+FUNCTION:
+    alpha
+
+VERSION:
+    1.0-fix4
+
+DESCRIPTION:
+    
+
+NOTES:
+    
+
+PARAMETRS:
+
+    'f_value' - Alpha value
+
