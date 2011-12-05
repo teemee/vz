@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
@@ -19,14 +20,19 @@ namespace WindowsFormsApplication1
             insertZeile2verbleibend.Text = insertLine2.MaxLength.ToString();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SendInsert_Click(object sender, EventArgs e)
         {
-
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = insertLine1.Text;
+            String insert2 = insertLine2.Text;
+            String testcmdline = senderExePfad + " " + server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String insertArgs = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            testLabel.Text = testcmdline;
+            UTF8Encoding encoder = new UTF8Encoding();
+            byte[] bytes = Encoding.UTF8.GetBytes(insertArgs);
+            string utf8ReturnString = encoder.GetString(bytes);
+            System.Diagnostics.Process.Start(senderExePfad , utf8ReturnString);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,26 +42,47 @@ namespace WindowsFormsApplication1
 
         private void insertLine1_TextChanged(object sender, EventArgs e)
         {
+            //Aktualisieren der Verbleibenden Zeichen Line 1
             int eingabe = insertLine1.MaxLength - insertLine1.TextLength;
             insertZeile1verbleibend.Text = eingabe.ToString();
         }
 
         private void insertLine2_TextChanged(object sender, EventArgs e)
         {
+            //Aktualisieren der Verbleibenden Zeichen Line 2
             int eingabe = insertLine2.MaxLength - insertLine2.TextLength;
             insertZeile2verbleibend.Text = eingabe.ToString();
         }
 
         private void openCrawlerFile_FileOk(object sender, CancelEventArgs e)
         {
+            //Schreiben des Pfades des Öffnen-Dialogs in Variable und entsprechendes Textfeld
             string crawlerpfad = openCrawlerFile.FileName;
-            crawlerPfad.Text = crawlerpfad;
+            boxCrawlerPfad.Text = crawlerpfad;
         }
 
         private void buttonOpen_Click(object sender, EventArgs e)
         {
             openCrawlerFile.ShowDialog();
         }
+
+        private void buttonOpenSender_Click(object sender, EventArgs e)
+        {
+            openSenderExe.ShowDialog();
+        }
+
+        private void openSenderExe_FileOk(object sender, CancelEventArgs e)
+        {
+            //Schreiben des Pfades des Öffnen-Dialogs in Variable und entsprechendes Textfeld
+            string SenderExePfad = openSenderExe.FileName;
+            boxSenderPfad.Text = SenderExePfad;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         
 

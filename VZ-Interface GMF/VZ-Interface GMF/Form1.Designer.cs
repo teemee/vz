@@ -39,14 +39,22 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonOpen = new System.Windows.Forms.Button();
+            this.buttonOpenCrawler = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.crawlerPfad = new System.Windows.Forms.TextBox();
+            this.boxCrawlerPfad = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.testLabel = new System.Windows.Forms.Label();
+            this.buttonOpenSender = new System.Windows.Forms.Button();
+            this.boxSenderPfad = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxServer = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
+            this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // insertLine1
@@ -154,9 +162,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.buttonOpen);
+            this.groupBox2.Controls.Add(this.buttonOpenCrawler);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.crawlerPfad);
+            this.groupBox2.Controls.Add(this.boxCrawlerPfad);
             this.groupBox2.Location = new System.Drawing.Point(16, 155);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(393, 230);
@@ -164,15 +172,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crawler";
             // 
-            // buttonOpen
+            // buttonOpenCrawler
             // 
-            this.buttonOpen.Location = new System.Drawing.Point(363, 34);
-            this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(24, 23);
-            this.buttonOpen.TabIndex = 2;
-            this.buttonOpen.Text = "...";
-            this.buttonOpen.UseVisualStyleBackColor = true;
-            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
+            this.buttonOpenCrawler.Location = new System.Drawing.Point(363, 34);
+            this.buttonOpenCrawler.Name = "buttonOpenCrawler";
+            this.buttonOpenCrawler.Size = new System.Drawing.Size(24, 23);
+            this.buttonOpenCrawler.TabIndex = 2;
+            this.buttonOpenCrawler.Text = "...";
+            this.buttonOpenCrawler.UseVisualStyleBackColor = true;
+            this.buttonOpenCrawler.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
             // label3
             // 
@@ -183,15 +191,21 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Pfad zum Textfile";
             // 
-            // crawlerPfad
+            // boxCrawlerPfad
             // 
-            this.crawlerPfad.Location = new System.Drawing.Point(9, 35);
-            this.crawlerPfad.Name = "crawlerPfad";
-            this.crawlerPfad.Size = new System.Drawing.Size(348, 20);
-            this.crawlerPfad.TabIndex = 0;
+            this.boxCrawlerPfad.Location = new System.Drawing.Point(9, 35);
+            this.boxCrawlerPfad.Name = "boxCrawlerPfad";
+            this.boxCrawlerPfad.Size = new System.Drawing.Size(348, 20);
+            this.boxCrawlerPfad.TabIndex = 0;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.testLabel);
+            this.tabPage2.Controls.Add(this.buttonOpenSender);
+            this.tabPage2.Controls.Add(this.boxSenderPfad);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.textBoxServer);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -200,10 +214,66 @@
             this.tabPage2.Text = "Einstellungen";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // testLabel
+            // 
+            this.testLabel.AutoSize = true;
+            this.testLabel.Location = new System.Drawing.Point(20, 177);
+            this.testLabel.Name = "testLabel";
+            this.testLabel.Size = new System.Drawing.Size(35, 13);
+            this.testLabel.TabIndex = 5;
+            this.testLabel.Text = "label6";
+            // 
+            // buttonOpenSender
+            // 
+            this.buttonOpenSender.Location = new System.Drawing.Point(382, 91);
+            this.buttonOpenSender.Name = "buttonOpenSender";
+            this.buttonOpenSender.Size = new System.Drawing.Size(24, 23);
+            this.buttonOpenSender.TabIndex = 4;
+            this.buttonOpenSender.Text = "...";
+            this.buttonOpenSender.UseVisualStyleBackColor = true;
+            this.buttonOpenSender.Click += new System.EventHandler(this.buttonOpenSender_Click);
+            // 
+            // boxSenderPfad
+            // 
+            this.boxSenderPfad.Location = new System.Drawing.Point(23, 91);
+            this.boxSenderPfad.Name = "boxSenderPfad";
+            this.boxSenderPfad.Size = new System.Drawing.Size(353, 20);
+            this.boxSenderPfad.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 75);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(136, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Pfad zur VzCmdSender.exe";
+            // 
+            // textBoxServer
+            // 
+            this.textBoxServer.Location = new System.Drawing.Point(62, 17);
+            this.textBoxServer.Name = "textBoxServer";
+            this.textBoxServer.Size = new System.Drawing.Size(117, 20);
+            this.textBoxServer.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Server:";
+            // 
             // openCrawlerFile
             // 
             this.openCrawlerFile.FileName = "openFileDialog1";
             this.openCrawlerFile.FileOk += new System.ComponentModel.CancelEventHandler(this.openCrawlerFile_FileOk);
+            // 
+            // openSenderExe
+            // 
+            this.openSenderExe.FileName = "openFileDialog1";
+            this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
             // 
             // Form1
             // 
@@ -219,6 +289,8 @@
             this.tabPage1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -239,8 +311,15 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.OpenFileDialog openCrawlerFile;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox crawlerPfad;
-        private System.Windows.Forms.Button buttonOpen;
+        private System.Windows.Forms.TextBox boxCrawlerPfad;
+        private System.Windows.Forms.Button buttonOpenCrawler;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonOpenSender;
+        private System.Windows.Forms.TextBox boxSenderPfad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxServer;
+        private System.Windows.Forms.OpenFileDialog openSenderExe;
+        private System.Windows.Forms.Label testLabel;
     }
 }
 

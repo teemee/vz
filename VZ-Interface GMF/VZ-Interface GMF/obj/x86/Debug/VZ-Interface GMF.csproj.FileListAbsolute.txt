@@ -7,3 +7,12 @@ C:\Users\Alex\documents\visual studio 2010\Projects\VZ-Interface GMF\VZ-Interfac
 C:\Users\Alex\documents\visual studio 2010\Projects\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Alex\documents\visual studio 2010\Projects\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.exe
 C:\Users\Alex\documents\visual studio 2010\Projects\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.pdb
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.exe
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.pdb
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\bin\Debug\VZ-Interface GMF.exe
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\bin\Debug\VZ-Interface GMF.pdb
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\GenerateResource.write.1.tlog
