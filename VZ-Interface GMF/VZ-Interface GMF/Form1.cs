@@ -27,12 +27,21 @@ namespace WindowsFormsApplication1
             String insert1 = insertLine1.Text;
             String insert2 = insertLine2.Text;
             String testcmdline = senderExePfad + " " + server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
-            String insertArgs = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
             testLabel.Text = testcmdline;
-            UTF8Encoding encoder = new UTF8Encoding();
-            byte[] bytes = Encoding.UTF8.GetBytes(insertArgs);
-            string utf8ReturnString = encoder.GetString(bytes);
-            System.Diagnostics.Process.Start(senderExePfad , utf8ReturnString);
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+      
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -81,6 +90,63 @@ namespace WindowsFormsApplication1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonInsertOn_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String blubb = server + " START_DIRECTOR main 0";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonInsertOff_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String blubb = server + " CONTINUE_DIRECTOR main";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonLoadScene_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String blubb = server + " LOAD_SCENE ./projects/guten-morgen-filstal/guten-morgen-filstal.xml";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
         }
 
 

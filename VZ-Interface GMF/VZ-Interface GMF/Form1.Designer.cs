@@ -51,6 +51,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
             this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
+            this.buttonInsertOn = new System.Windows.Forms.Button();
+            this.buttonInsertOff = new System.Windows.Forms.Button();
+            this.buttonLoadScene = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -59,8 +62,8 @@
             // 
             // insertLine1
             // 
-            this.insertLine1.Location = new System.Drawing.Point(101, 48);
-            this.insertLine1.MaxLength = 45;
+            this.insertLine1.Location = new System.Drawing.Point(101, 114);
+            this.insertLine1.MaxLength = 35;
             this.insertLine1.Name = "insertLine1";
             this.insertLine1.Size = new System.Drawing.Size(243, 20);
             this.insertLine1.TabIndex = 0;
@@ -69,7 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 51);
+            this.label1.Location = new System.Drawing.Point(31, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 1;
@@ -77,8 +80,8 @@
             // 
             // insertLine2
             // 
-            this.insertLine2.Location = new System.Drawing.Point(101, 74);
-            this.insertLine2.MaxLength = 45;
+            this.insertLine2.Location = new System.Drawing.Point(101, 140);
+            this.insertLine2.MaxLength = 35;
             this.insertLine2.Name = "insertLine2";
             this.insertLine2.Size = new System.Drawing.Size(243, 20);
             this.insertLine2.TabIndex = 2;
@@ -87,7 +90,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 77);
+            this.label2.Location = new System.Drawing.Point(31, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 3;
@@ -96,7 +99,7 @@
             // 
             // SendInsert
             // 
-            this.SendInsert.Location = new System.Drawing.Point(101, 100);
+            this.SendInsert.Location = new System.Drawing.Point(101, 166);
             this.SendInsert.Name = "SendInsert";
             this.SendInsert.Size = new System.Drawing.Size(75, 23);
             this.SendInsert.TabIndex = 4;
@@ -107,7 +110,7 @@
             // insertZeile1verbleibend
             // 
             this.insertZeile1verbleibend.AutoSize = true;
-            this.insertZeile1verbleibend.Location = new System.Drawing.Point(345, 51);
+            this.insertZeile1verbleibend.Location = new System.Drawing.Point(345, 117);
             this.insertZeile1verbleibend.Name = "insertZeile1verbleibend";
             this.insertZeile1verbleibend.Size = new System.Drawing.Size(34, 13);
             this.insertZeile1verbleibend.TabIndex = 5;
@@ -116,7 +119,7 @@
             // insertZeile2verbleibend
             // 
             this.insertZeile2verbleibend.AutoSize = true;
-            this.insertZeile2verbleibend.Location = new System.Drawing.Point(345, 77);
+            this.insertZeile2verbleibend.Location = new System.Drawing.Point(345, 143);
             this.insertZeile2verbleibend.Name = "insertZeile2verbleibend";
             this.insertZeile2verbleibend.Size = new System.Drawing.Size(34, 13);
             this.insertZeile2verbleibend.TabIndex = 6;
@@ -124,7 +127,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(16, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(393, 137);
             this.groupBox1.TabIndex = 8;
@@ -138,11 +141,14 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(433, 433);
+            this.tabControl1.Size = new System.Drawing.Size(433, 499);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.buttonLoadScene);
+            this.tabPage1.Controls.Add(this.buttonInsertOff);
+            this.tabPage1.Controls.Add(this.buttonInsertOn);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.insertZeile2verbleibend);
             this.tabPage1.Controls.Add(this.SendInsert);
@@ -155,7 +161,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(425, 407);
+            this.tabPage1.Size = new System.Drawing.Size(425, 473);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "OnAir Gedöns";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -165,9 +171,9 @@
             this.groupBox2.Controls.Add(this.buttonOpenCrawler);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.boxCrawlerPfad);
-            this.groupBox2.Location = new System.Drawing.Point(16, 155);
+            this.groupBox2.Location = new System.Drawing.Point(16, 229);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(393, 230);
+            this.groupBox2.Size = new System.Drawing.Size(393, 234);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crawler";
@@ -275,6 +281,36 @@
             this.openSenderExe.FileName = "openFileDialog1";
             this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
             // 
+            // buttonInsertOn
+            // 
+            this.buttonInsertOn.Location = new System.Drawing.Point(178, 30);
+            this.buttonInsertOn.Name = "buttonInsertOn";
+            this.buttonInsertOn.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsertOn.TabIndex = 10;
+            this.buttonInsertOn.Text = "REIN";
+            this.buttonInsertOn.UseVisualStyleBackColor = true;
+            this.buttonInsertOn.Click += new System.EventHandler(this.buttonInsertOn_Click);
+            // 
+            // buttonInsertOff
+            // 
+            this.buttonInsertOff.Location = new System.Drawing.Point(259, 30);
+            this.buttonInsertOff.Name = "buttonInsertOff";
+            this.buttonInsertOff.Size = new System.Drawing.Size(75, 23);
+            this.buttonInsertOff.TabIndex = 11;
+            this.buttonInsertOff.Text = "RAUS";
+            this.buttonInsertOff.UseVisualStyleBackColor = true;
+            this.buttonInsertOff.Click += new System.EventHandler(this.buttonInsertOff_Click);
+            // 
+            // buttonLoadScene
+            // 
+            this.buttonLoadScene.Location = new System.Drawing.Point(25, 30);
+            this.buttonLoadScene.Name = "buttonLoadScene";
+            this.buttonLoadScene.Size = new System.Drawing.Size(83, 23);
+            this.buttonLoadScene.TabIndex = 12;
+            this.buttonLoadScene.Text = "Szene laden";
+            this.buttonLoadScene.UseVisualStyleBackColor = true;
+            this.buttonLoadScene.Click += new System.EventHandler(this.buttonLoadScene_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,6 +356,9 @@
         private System.Windows.Forms.TextBox textBoxServer;
         private System.Windows.Forms.OpenFileDialog openSenderExe;
         private System.Windows.Forms.Label testLabel;
+        private System.Windows.Forms.Button buttonInsertOff;
+        private System.Windows.Forms.Button buttonInsertOn;
+        private System.Windows.Forms.Button buttonLoadScene;
     }
 }
 
