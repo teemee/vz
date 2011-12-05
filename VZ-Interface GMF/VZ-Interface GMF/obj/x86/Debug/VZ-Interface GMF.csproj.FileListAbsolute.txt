@@ -16,3 +16,7 @@ C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\Windo
 C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\bin\Debug\VZ-Interface GMF.exe.manifest
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\bin\Debug\VZ-Interface GMF.application
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.exe.manifest
+C:\Users\Alex\Documents\vz\VZ-Interface GMF\VZ-Interface GMF\obj\x86\Debug\VZ-Interface GMF.application

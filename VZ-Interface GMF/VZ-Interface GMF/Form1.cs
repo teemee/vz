@@ -20,6 +20,10 @@ namespace WindowsFormsApplication1
             insertZeile2verbleibend.Text = insertLine2.MaxLength.ToString();
         }
 
+        public String setInsert1 = "";
+        public String setInsert2 = "";
+
+
         private void SendInsert_Click(object sender, EventArgs e)
         {
             String server = textBoxServer.Text;
@@ -148,6 +152,157 @@ namespace WindowsFormsApplication1
             proc.WaitForExit();
             proc.Close();
         }
+
+        private void buttonToSet_Click(object sender, EventArgs e)
+        {
+
+            setInsert1 = insertLine1.Text;
+            setInsert2 = insertLine2.Text;
+            
+            buttonSet1.BackColor = Color.Red;
+            buttonSet2.BackColor = Color.Red;
+            buttonSet3.BackColor = Color.Red;
+            buttonSet4.BackColor = Color.Red;
+            buttonSet5.BackColor = Color.Red;
+            buttonSet6.BackColor = Color.Red;
+        }
+
+        private void buttonSet1_Click(object sender, EventArgs e)
+        {
+
+            if (buttonSet1.BackColor == Color.Red)
+            {
+                labelSet11.Text = setInsert1;
+                labelSet12.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet11.Text;
+                insertLine2.Text = labelSet12.Text;
+            }
+
+        }
+
+        private void buttonSet2_Click(object sender, EventArgs e)
+        {
+            if (buttonSet2.BackColor == Color.Red)
+            {
+                labelSet21.Text = setInsert1;
+                labelSet22.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet21.Text;
+                insertLine2.Text = labelSet22.Text;
+            }
+        }
+
+        private void buttonSet3_Click(object sender, EventArgs e)
+        {
+            if (buttonSet3.BackColor == Color.Red)
+            {
+                labelSet31.Text = setInsert1;
+                labelSet32.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet31.Text;
+                insertLine2.Text = labelSet32.Text;
+            }
+        }
+
+        private void buttonSet4_Click(object sender, EventArgs e)
+        {
+            if (buttonSet4.BackColor == Color.Red)
+            {
+                labelSet41.Text = setInsert1;
+                labelSet42.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet41.Text;
+                insertLine2.Text = labelSet42.Text;
+            }
+        }
+
+        private void buttonSet5_Click(object sender, EventArgs e)
+        {
+            if (buttonSet5.BackColor == Color.Red)
+            {
+                labelSet51.Text = setInsert1;
+                labelSet52.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet51.Text;
+                insertLine2.Text = labelSet52.Text;
+            }
+        }
+
+        private void buttonSet6_Click(object sender, EventArgs e)
+        {
+            if (buttonSet6.BackColor == Color.Red)
+            {
+                labelSet61.Text = setInsert1;
+                labelSet62.Text = setInsert2;
+                buttonSet1.BackColor = Color.Transparent;
+                buttonSet2.BackColor = Color.Transparent;
+                buttonSet3.BackColor = Color.Transparent;
+                buttonSet4.BackColor = Color.Transparent;
+                buttonSet5.BackColor = Color.Transparent;
+                buttonSet6.BackColor = Color.Transparent;
+                setInsert1 = "";
+                setInsert2 = "";
+            }
+            else
+            {
+                insertLine1.Text = labelSet61.Text;
+                insertLine2.Text = labelSet62.Text;
+            }
+        }
+
+     
+      
 
 
         
