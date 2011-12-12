@@ -32,7 +32,7 @@
         <function name="translate">
             <!-- Unten Links-->
 			<param name="f_x" value="0"/>
-            <param name="f_y" value="-28"/>
+            <param name="f_y" value="0"/>
         </function>
 
         <container visible="1">
@@ -145,11 +145,28 @@
 					</function> 	
 				</container>
 				
-				<!-- Datum -->
+				<!-- Tag -->
 				<container visible="1">
 					<function name="translate">
 						<param name="f_x" value="0"/>
 						<param name="f_y" value="-35"/>
+					</function>
+					<function name="ttfont" id="wochentag">
+						<param name="s_text" value="Tach"/>
+						<param name="s_font" value="HelveticaNeueBd"/>
+						<param name="l_height" value="18"/>
+						<param name="h_colour" value="0xFFFFFFFF"/>
+					</function>
+					<function name="systime" datatarget="wochentag" id="t_tag">
+						<param name="s_format" value="%A"/>
+					</function> 	
+				</container>
+				
+				<!-- Datum -->
+				<container visible="1">
+					<function name="translate">
+						<param name="f_x" value="0"/>
+						<param name="f_y" value="-60"/>
 					</function>
 					<function name="ttfont" id="datum">
 						<param name="s_text" value="00.00.0000"/>
@@ -242,6 +259,26 @@
 					<param name="L_center" value="_LB_"/>
 				</function>
 			</container>
+			
+			<!-- blanking -->
+			<container visible="1">
+ 				<function name="translate">
+					<param name="f_x" value="0"/>
+					<param name="f_y" value="0"/>
+				</function>
+				<function name="rectangle">
+					<param name="f_width" value="720"/>
+					<param name="f_height" value="50"/>
+					<param name="L_center" value="_LB_"/>
+					<param name="f_colour_R" value="0"/>
+					<param name="f_colour_G" value="0"/>
+					<param name="f_colour_B" value="0"/>
+					<param name="f_colour_A" value="255"/>
+					
+				</function>
+			</container>
+			
+			
 			
         </container>
 		

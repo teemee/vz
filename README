@@ -1,3 +1,14 @@
-vz (ViZualizator) is software complex for generation realtime TV-graphics. Fine and easy solution for TV studio graphics, channel branding and TV-Interective solutions in SD and HD modes.
-Scene (or project file) is external file (in XML format). It's tree - based description of graphics primitives layout and operation about parameters changing.
-Managing of vz behavior performed by external program that communicate with main rendering module using TCP or UDP protocols. Main program provides telnet-like shell where external commands send throw using predefined syntax. Command could be used for loading "scene" file (primitives layout), modification parameters of graphic primitives or for starting/stopping timeline's complex (called director).
+About
+
+vz (ViZualizator) is software complex for generation realtime TV-graphics.
+Fine and easy solution for TV studio graphics, channel branding and TV-Interective
+solutions in SD and HD modes.
+
+Scene (or project file) is external file (in XML format). It's tree - based description
+of graphics primitives layout and operation about parameters changing.
+
+Managing of vz behavior performed by external program that communicate with main rendering
+module using TCP or UDP protocols. Main program provides telnet-like shell where external
+commands send throw using predefined syntax. Command could be used for loading "scene" file
+(primitives layout), modification parameters of graphic primitives or for starting/stopping
+timeline's complex (called director).
