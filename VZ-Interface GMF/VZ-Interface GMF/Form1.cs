@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
@@ -22,7 +23,7 @@ namespace WindowsFormsApplication1
 
         public String setInsert1 = "";
         public String setInsert2 = "";
-
+       
 
         private void SendInsert_Click(object sender, EventArgs e)
         {
@@ -70,8 +71,21 @@ namespace WindowsFormsApplication1
         private void openCrawlerFile_FileOk(object sender, CancelEventArgs e)
         {
             //Schreiben des Pfades des Öffnen-Dialogs in Variable und entsprechendes Textfeld
-            string crawlerpfad = openCrawlerFile.FileName;
-            boxCrawlerPfad.Text = crawlerpfad;
+            vars.crawlerPath = openCrawlerFile.FileName;
+            boxCrawlerPfad.Text = vars.crawlerPath;
+            // Auslesen der Datei
+            StreamReader readCrawler = new StreamReader(vars.crawlerPath);
+            string crawlerText = readCrawler.ReadToEnd();
+            readCrawler.Close();
+            textBoxCrawler.Text = crawlerText;
+            //trennen von Filename und Pfad und speichern in verschiedene Variablen
+            int i = vars.crawlerPath.Length;
+            string s = "";
+            while (s != "\\")
+            {
+
+            }
+
         }
 
         private void buttonOpen_Click(object sender, EventArgs e)
@@ -300,6 +314,13 @@ namespace WindowsFormsApplication1
                 insertLine2.Text = labelSet62.Text;
             }
         }
+
+        private void buttonOpenCrawler_Click(object sender, EventArgs e)
+        {
+            openCrawlerFile.ShowDialog();
+        }
+
+      
 
      
       

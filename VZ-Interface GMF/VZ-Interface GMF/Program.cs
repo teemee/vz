@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Security.Permissions;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,10 @@ namespace WindowsFormsApplication1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            FileSystemWatcher watch = new FileSystemWatcher();
+            watch.File = 
+            
+
         }
 
 

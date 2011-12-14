@@ -62,6 +62,7 @@
             this.buttonInsertOn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxCrawler = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -432,6 +433,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxCrawler);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textBox1);
@@ -445,6 +447,14 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crawler";
+            // 
+            // textBoxCrawler
+            // 
+            this.textBoxCrawler.Location = new System.Drawing.Point(8, 180);
+            this.textBoxCrawler.Multiline = true;
+            this.textBoxCrawler.Name = "textBoxCrawler";
+            this.textBoxCrawler.Size = new System.Drawing.Size(378, 228);
+            this.textBoxCrawler.TabIndex = 11;
             // 
             // label7
             // 
@@ -490,6 +500,7 @@
             this.buttonOpenCrawler.TabIndex = 2;
             this.buttonOpenCrawler.Text = "...";
             this.buttonOpenCrawler.UseVisualStyleBackColor = true;
+            this.buttonOpenCrawler.Click += new System.EventHandler(this.buttonOpenCrawler_Click);
             // 
             // label3
             // 
@@ -659,6 +670,7 @@
         private System.Windows.Forms.Button buttonOpenCrawler;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox boxCrawlerPfad;
+        private System.Windows.Forms.TextBox textBoxCrawler;
     }
 }
 
