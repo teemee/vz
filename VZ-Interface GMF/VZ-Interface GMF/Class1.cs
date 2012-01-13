@@ -23,5 +23,5 @@ namespace WindowsFormsApplication1
             get { return p_crawlerFile; }
             set { p_crawlerFile = value; }
 
+        }
     }
-}
