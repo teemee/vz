@@ -32,7 +32,7 @@
         <function name="translate">
             <!-- Unten Links-->
 			<param name="f_x" value="0"/>
-            <param name="f_y" value="22"/>
+            <param name="f_y" value="0"/>
         </function>
 
         <container visible="1">
@@ -166,7 +166,7 @@
 						<param name="f_y" value="0"/>
 					</function>
 					<function name="ttfont" id="KontaktZ1">
-						<param name="s_text" value="Mail ins Studio:"/>
+						<param name="s_text" value="studio@radiofips.de"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="20"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
@@ -181,7 +181,7 @@
 						<param name="f_y" value="-24"/>
 					</function>
 					<function name="ttfont" id="KontaktZ2">
-						<param name="s_text" value="studio@radiofips.de"/>
+						<param name="s_text" value="Telefon"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="20"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
@@ -196,28 +196,13 @@
 						<param name="f_y" value="-48"/>
 					</function>
 					<function name="ttfont" id="KontaktZ3">
-						<param name="s_text" value="Telefon:"/>
+						<param name="s_text" value="07161 - 9 14 24 24"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="20"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
 						<param name="L_center" value="_CT_"/>
 					</function>
 				</container>
-				
-				<!-- Zeile 4 -->
-				<container visible="1">
-					<function name="translate">
-						<param name="f_x" value="0"/>
-						<param name="f_y" value="-72"/>
-					</function>
-					<function name="ttfont" id="KontaktZ4">
-						<param name="s_text" value="07161 - 9142424"/>
-						<param name="s_font" value="HelveticaNeueBd"/>
-						<param name="l_height" value="20"/>
-						<param name="h_colour" value="0xFFFFFFFF"/>
-						<param name="L_center" value="_CT_"/>
-					</function>
-				</container>				
 			</container>
 			
 			<!-- Hintergrund -->
