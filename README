@@ -12,3 +12,5 @@ module using TCP or UDP protocols. Main program provides telnet-like shell where
 commands send throw using predefined syntax. Command could be used for loading "scene" file
 (primitives layout), modification parameters of graphic primitives or for starting/stopping
 timeline's complex (called director).
+
+http://research.m1stereo.tv/wiki/index.php/Vz

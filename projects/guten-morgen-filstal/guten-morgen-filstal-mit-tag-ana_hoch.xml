@@ -255,7 +255,7 @@
 					<param name="f_y" value="26"/>
 				</function>
 				<function name="image">
-					<param name="s_filename" value="./projects/guten-morgen-filstal/hintergrund.tga"/>
+					<param name="s_filename" value="./projects/guten-morgen-filstal/hintergrund_hoch.tga"/>
 					<param name="L_center" value="_LB_"/>
 				</function>
 			</container>
