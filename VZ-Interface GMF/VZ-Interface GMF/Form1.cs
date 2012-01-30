@@ -74,17 +74,18 @@ namespace WindowsFormsApplication1
             vars.crawlerPath = openCrawlerFile.FileName;
             boxCrawlerPfad.Text = vars.crawlerPath;
             // Auslesen der Datei
-            StreamReader readCrawler = new StreamReader(vars.crawlerPath);
+            StreamReader readCrawler = new StreamReader(vars.crawlerPath,System.Text.Encoding.Default);
             string crawlerText = readCrawler.ReadToEnd();
             readCrawler.Close();
+            //Encoding des Crawler-Textes in UTF8
             textBoxCrawler.Text = crawlerText;
             //trennen von Filename und Pfad und speichern in verschiedene Variablen
-            int i = vars.crawlerPath.Length;
-            string s = "";
-            while (s != "\\")
-            {
+            //int i = vars.crawlerPath.Length;
+            //string s = "";
+            //while (s != "\\")
+            //{
 
-            }
+            //}
 
         }
 
@@ -112,6 +113,7 @@ namespace WindowsFormsApplication1
 
         private void buttonInsertOn_Click(object sender, EventArgs e)
         {
+            //Verarbeitung Button 'REIN'
             String server = textBoxServer.Text;
             String senderExePfad = boxSenderPfad.Text;
             String blubb = server + " START_DIRECTOR main 0";
@@ -131,6 +133,7 @@ namespace WindowsFormsApplication1
 
         private void buttonInsertOff_Click(object sender, EventArgs e)
         {
+            //Verarbeitung Button 'RAUS'
             String server = textBoxServer.Text;
             String senderExePfad = boxSenderPfad.Text;
             String blubb = server + " CONTINUE_DIRECTOR main";
@@ -170,6 +173,7 @@ namespace WindowsFormsApplication1
         private void buttonToSet_Click(object sender, EventArgs e)
         {
 
+            //Speichern auf Bank einleiten
             setInsert1 = insertLine1.Text;
             setInsert2 = insertLine2.Text;
             
@@ -183,7 +187,7 @@ namespace WindowsFormsApplication1
 
         private void buttonSet1_Click(object sender, EventArgs e)
         {
-
+            //Fallunterscheidung, Entweder Insert auf Bank 1 legen und Buttonfarbe zurücksetzen...
             if (buttonSet1.BackColor == Color.Red)
             {
                 labelSet11.Text = setInsert1;
@@ -197,6 +201,7 @@ namespace WindowsFormsApplication1
                 setInsert1 = "";
                 setInsert2 = "";
             }
+                //oder Bankinhalt in die beiden Insert-Felder legen
             else
             {
                 insertLine1.Text = labelSet11.Text;
@@ -318,6 +323,16 @@ namespace WindowsFormsApplication1
         private void buttonOpenCrawler_Click(object sender, EventArgs e)
         {
             openCrawlerFile.ShowDialog();
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            // Auslesen der Datei
+            StreamReader readCrawler = new StreamReader(vars.crawlerPath, System.Text.Encoding.Default);
+            string crawlerText = readCrawler.ReadToEnd();
+            readCrawler.Close();
+            //Encoding des Crawler-Textes in UTF8
+            textBoxCrawler.Text = crawlerText;
         }
 
       

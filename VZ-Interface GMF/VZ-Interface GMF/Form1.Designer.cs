@@ -79,6 +79,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
             this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonSaveCrawl = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -433,6 +435,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.buttonSaveCrawl);
+            this.groupBox2.Controls.Add(this.buttonUpdate);
             this.groupBox2.Controls.Add(this.textBoxCrawler);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
@@ -595,6 +599,25 @@
             this.openSenderExe.FileName = "openFileDialog1";
             this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
             // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(9, 413);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 12;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // buttonSaveCrawl
+            // 
+            this.buttonSaveCrawl.Location = new System.Drawing.Point(99, 413);
+            this.buttonSaveCrawl.Name = "buttonSaveCrawl";
+            this.buttonSaveCrawl.Size = new System.Drawing.Size(68, 23);
+            this.buttonSaveCrawl.TabIndex = 13;
+            this.buttonSaveCrawl.Text = "Crawl";
+            this.buttonSaveCrawl.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -671,6 +694,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox boxCrawlerPfad;
         private System.Windows.Forms.TextBox textBoxCrawler;
+        private System.Windows.Forms.Button buttonSaveCrawl;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }
 

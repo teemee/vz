@@ -21,11 +21,13 @@ namespace WindowsFormsApplication1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //Hier soll die überprüfung OnFileChange für den Crawler passieren
             FileSystemWatcher watch = new FileSystemWatcher();
-            watch.File = 
+            watch.Path = vars.crawlerPath;
             
 
         }
+    }
 
 
 
@@ -33,6 +35,7 @@ namespace WindowsFormsApplication1
         {
             public string path;
 
+            //hier soll mal noch ne ini realisiert werden. Um einstellungen dauerhaft speichern zu können
             [DllImport("kernel32")]
             private static extern long WritePrivateProfileString(string section,
               string key, string val, string filePath);
@@ -66,4 +69,4 @@ namespace WindowsFormsApplication1
 
        
     }
-}
+

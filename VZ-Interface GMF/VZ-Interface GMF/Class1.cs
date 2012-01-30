@@ -6,6 +6,7 @@ using System.Text;
 namespace WindowsFormsApplication1
 {
     //Definition Globaler Variablen, die Programmübergreifend nutzbar sind
+    //Muss wohl so kompliziert sein, der Sicherheit wegen. Am Arsch Harald...
     public static class vars
     {
         private static string p_crawlerPath = "";
@@ -25,3 +26,5 @@ namespace WindowsFormsApplication1
 
         }
     }
+
+}
