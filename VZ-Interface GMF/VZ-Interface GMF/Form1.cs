@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
@@ -77,7 +78,6 @@ namespace WindowsFormsApplication1
             StreamReader readCrawler = new StreamReader(vars.crawlerPath,System.Text.Encoding.Default);
             string crawlerText = readCrawler.ReadToEnd();
             readCrawler.Close();
-            //Encoding des Crawler-Textes in UTF8
             textBoxCrawler.Text = crawlerText;
             //trennen von Filename und Pfad und speichern in verschiedene Variablen
             //int i = vars.crawlerPath.Length;
@@ -331,8 +331,29 @@ namespace WindowsFormsApplication1
             StreamReader readCrawler = new StreamReader(vars.crawlerPath, System.Text.Encoding.Default);
             string crawlerText = readCrawler.ReadToEnd();
             readCrawler.Close();
-            //Encoding des Crawler-Textes in UTF8
             textBoxCrawler.Text = crawlerText;
+        }
+
+        private void buttonSaveCrawl_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            //schreiben des Crawl-Textfeldes in 'CrawlText' und ersetzen der Zeilenumbrüche in Leerzeichen
+            String CrawlText = Regex.Replace(textBoxCrawler.Text, "\r\n", " ");
+            String blubb = server + " SET crawler l_reset 1 SET crawler s_trig_append \"" + CrawlText + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            //Ausführen der Sender-Exe zu VZ mit übergabe von 'arguments'
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
         }
 
       

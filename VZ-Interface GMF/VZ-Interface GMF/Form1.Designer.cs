@@ -62,6 +62,8 @@
             this.buttonInsertOn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonSaveCrawl = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.textBoxCrawler = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,8 +81,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
             this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonSaveCrawl = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -452,6 +452,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crawler";
             // 
+            // buttonSaveCrawl
+            // 
+            this.buttonSaveCrawl.Location = new System.Drawing.Point(99, 413);
+            this.buttonSaveCrawl.Name = "buttonSaveCrawl";
+            this.buttonSaveCrawl.Size = new System.Drawing.Size(68, 23);
+            this.buttonSaveCrawl.TabIndex = 13;
+            this.buttonSaveCrawl.Text = "Crawl";
+            this.buttonSaveCrawl.UseVisualStyleBackColor = true;
+            this.buttonSaveCrawl.Click += new System.EventHandler(this.buttonSaveCrawl_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(9, 413);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 12;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
             // textBoxCrawler
             // 
             this.textBoxCrawler.Location = new System.Drawing.Point(8, 180);
@@ -598,25 +618,6 @@
             // 
             this.openSenderExe.FileName = "openFileDialog1";
             this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(9, 413);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdate.TabIndex = 12;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // buttonSaveCrawl
-            // 
-            this.buttonSaveCrawl.Location = new System.Drawing.Point(99, 413);
-            this.buttonSaveCrawl.Name = "buttonSaveCrawl";
-            this.buttonSaveCrawl.Size = new System.Drawing.Size(68, 23);
-            this.buttonSaveCrawl.TabIndex = 13;
-            this.buttonSaveCrawl.Text = "Crawl";
-            this.buttonSaveCrawl.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

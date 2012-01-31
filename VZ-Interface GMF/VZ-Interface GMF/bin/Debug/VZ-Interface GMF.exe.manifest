@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VZ-Interface GMF.exe" size="24576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VZ-Interface GMF.exe" size="25088">
       <assemblyIdentity name="VZ-Interface GMF" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PuDs4mmAKUfN24vhVhqeNEZ2KZw=</dsig:DigestValue>
+        <dsig:DigestValue>hHywFDFzDfE0E3PFO2r0wvore4M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
