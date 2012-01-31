@@ -53,7 +53,7 @@
 					<param name="l_interval" value="20"/>
 					<param name="f_speed" value="1.50"/>
 					<param name="f_advance_ratio" value="1.1"/>
-					<param name="s_trig_append" value="Ole ! Ole ! Subber Crawler Text"/>
+					<param name="s_trig_append" value="+++ Blindtext +++ Blindtext +++ Blindtext +++"/>
 				</function>
 			</container>
 
@@ -166,7 +166,7 @@
 						<param name="f_y" value="0"/>
 					</function>
 					<function name="ttfont" id="KontaktZ1">
-						<param name="s_text" value="studio@radiofips.de"/>
+						<param name="s_text" value="gmf@radiofips.de"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="20"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
