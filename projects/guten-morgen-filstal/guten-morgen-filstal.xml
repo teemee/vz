@@ -53,7 +53,7 @@
 					<param name="l_interval" value="20"/>
 					<param name="f_speed" value="1.50"/>
 					<param name="f_advance_ratio" value="1.1"/>
-					<param name="s_trig_append" value="+++ Blindtext +++ Blindtext +++ Blindtext +++"/>
+					<param name="s_trig_append" value="+++ Gleich geht's los mit Guten Morgen Filstal +++ Gleich geht's los mit Guten Morgen Filstal +++ Gleich geht's los mit Guten Morgen Filstal +++"/>
 				</function>
 			</container>
 
@@ -71,7 +71,7 @@
 						<param name="f_y" value="0"/>
 					</function>
 					<function name="ttfont" id="InfoZ1">
-						<param name="s_text" value="Jens aus Gruibingen grüßt alle die heute"/>
+						<param name="s_text" value="Guten Morgen !"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="24"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
@@ -86,7 +86,7 @@
 						<param name="f_y" value="-32"/>
 					</function>
 					<function name="ttfont" id="InfoZ2">
-						<param name="s_text" value="morgen schon wach sind - warum auch immer :-)"/>
+						<param name="s_text" value="Gleich geht's los mit Guten Morgen Filstal"/>
 						<param name="s_font" value="HelveticaNeueBd"/>
 						<param name="l_height" value="24"/>
 						<param name="h_colour" value="0xFFFFFFFF"/>
