@@ -85,6 +85,7 @@
             this.buttonCrawlLoopOn = new System.Windows.Forms.Button();
             this.buttonCrawlLoopOff = new System.Windows.Forms.Button();
             this.buttonCrawlReset = new System.Windows.Forms.Button();
+            this.buttonCrawlAppend = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -439,6 +440,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.buttonCrawlAppend);
             this.groupBox2.Controls.Add(this.buttonCrawlReset);
             this.groupBox2.Controls.Add(this.buttonCrawlLoopOff);
             this.groupBox2.Controls.Add(this.buttonCrawlLoopOn);
@@ -666,6 +668,16 @@
             this.buttonCrawlReset.UseVisualStyleBackColor = true;
             this.buttonCrawlReset.Click += new System.EventHandler(this.buttonCrawlReset_Click);
             // 
+            // buttonCrawlAppend
+            // 
+            this.buttonCrawlAppend.Location = new System.Drawing.Point(292, 411);
+            this.buttonCrawlAppend.Name = "buttonCrawlAppend";
+            this.buttonCrawlAppend.Size = new System.Drawing.Size(82, 23);
+            this.buttonCrawlAppend.TabIndex = 18;
+            this.buttonCrawlAppend.Text = "Crawl append";
+            this.buttonCrawlAppend.UseVisualStyleBackColor = true;
+            this.buttonCrawlAppend.Click += new System.EventHandler(this.buttonCrawlAppend_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,6 +760,7 @@
         private System.Windows.Forms.Button buttonCrawlLoopOff;
         private System.Windows.Forms.Button buttonCrawlLoopOn;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button buttonCrawlAppend;
     }
 }
 
