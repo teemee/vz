@@ -81,6 +81,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
             this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonCrawlLoopOn = new System.Windows.Forms.Button();
+            this.buttonCrawlLoopOff = new System.Windows.Forms.Button();
+            this.buttonCrawlReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -435,6 +439,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.buttonCrawlReset);
+            this.groupBox2.Controls.Add(this.buttonCrawlLoopOff);
+            this.groupBox2.Controls.Add(this.buttonCrawlLoopOn);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.buttonSaveCrawl);
             this.groupBox2.Controls.Add(this.buttonUpdate);
             this.groupBox2.Controls.Add(this.textBoxCrawler);
@@ -454,36 +462,36 @@
             // 
             // buttonSaveCrawl
             // 
-            this.buttonSaveCrawl.Location = new System.Drawing.Point(99, 413);
+            this.buttonSaveCrawl.Location = new System.Drawing.Point(153, 371);
             this.buttonSaveCrawl.Name = "buttonSaveCrawl";
-            this.buttonSaveCrawl.Size = new System.Drawing.Size(68, 23);
+            this.buttonSaveCrawl.Size = new System.Drawing.Size(124, 21);
             this.buttonSaveCrawl.TabIndex = 13;
-            this.buttonSaveCrawl.Text = "Crawl";
+            this.buttonSaveCrawl.Text = "Update Crawl OnAir";
             this.buttonSaveCrawl.UseVisualStyleBackColor = true;
             this.buttonSaveCrawl.Click += new System.EventHandler(this.buttonSaveCrawl_Click);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(9, 413);
+            this.buttonUpdate.Location = new System.Drawing.Point(9, 371);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.Size = new System.Drawing.Size(125, 21);
             this.buttonUpdate.TabIndex = 12;
-            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.Text = "Update Text from File";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // textBoxCrawler
             // 
-            this.textBoxCrawler.Location = new System.Drawing.Point(8, 180);
+            this.textBoxCrawler.Location = new System.Drawing.Point(8, 152);
             this.textBoxCrawler.Multiline = true;
             this.textBoxCrawler.Name = "textBoxCrawler";
-            this.textBoxCrawler.Size = new System.Drawing.Size(378, 228);
+            this.textBoxCrawler.Size = new System.Drawing.Size(378, 212);
             this.textBoxCrawler.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(126, 109);
+            this.label7.Location = new System.Drawing.Point(126, 95);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 6;
@@ -492,7 +500,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 109);
+            this.label6.Location = new System.Drawing.Point(6, 95);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 13);
             this.label6.TabIndex = 5;
@@ -500,7 +508,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 106);
+            this.textBox1.Location = new System.Drawing.Point(92, 92);
             this.textBox1.MaxLength = 3;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(30, 20);
@@ -619,6 +627,45 @@
             this.openSenderExe.FileName = "openFileDialog1";
             this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Text für Crawler";
+            // 
+            // buttonCrawlLoopOn
+            // 
+            this.buttonCrawlLoopOn.Location = new System.Drawing.Point(9, 411);
+            this.buttonCrawlLoopOn.Name = "buttonCrawlLoopOn";
+            this.buttonCrawlLoopOn.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlLoopOn.TabIndex = 15;
+            this.buttonCrawlLoopOn.Text = "Crawl loop on";
+            this.buttonCrawlLoopOn.UseVisualStyleBackColor = true;
+            this.buttonCrawlLoopOn.Click += new System.EventHandler(this.buttonCrawlLoopOn_Click);
+            // 
+            // buttonCrawlLoopOff
+            // 
+            this.buttonCrawlLoopOff.Location = new System.Drawing.Point(103, 411);
+            this.buttonCrawlLoopOff.Name = "buttonCrawlLoopOff";
+            this.buttonCrawlLoopOff.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlLoopOff.TabIndex = 16;
+            this.buttonCrawlLoopOff.Text = "Crawl loop off";
+            this.buttonCrawlLoopOff.UseVisualStyleBackColor = true;
+            this.buttonCrawlLoopOff.Click += new System.EventHandler(this.buttonCrawlLoopOff_Click);
+            // 
+            // buttonCrawlReset
+            // 
+            this.buttonCrawlReset.Location = new System.Drawing.Point(198, 411);
+            this.buttonCrawlReset.Name = "buttonCrawlReset";
+            this.buttonCrawlReset.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlReset.TabIndex = 17;
+            this.buttonCrawlReset.Text = "Crawl reset";
+            this.buttonCrawlReset.UseVisualStyleBackColor = true;
+            this.buttonCrawlReset.Click += new System.EventHandler(this.buttonCrawlReset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -697,6 +744,10 @@
         private System.Windows.Forms.TextBox textBoxCrawler;
         private System.Windows.Forms.Button buttonSaveCrawl;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonCrawlReset;
+        private System.Windows.Forms.Button buttonCrawlLoopOff;
+        private System.Windows.Forms.Button buttonCrawlLoopOn;
+        private System.Windows.Forms.Label label8;
     }
 }
 
