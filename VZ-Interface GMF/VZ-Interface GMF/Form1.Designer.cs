@@ -86,6 +86,19 @@
             this.buttonCrawlLoopOff = new System.Windows.Forms.Button();
             this.buttonCrawlReset = new System.Windows.Forms.Button();
             this.buttonCrawlAppend = new System.Windows.Forms.Button();
+            this.buttonVzInit = new System.Windows.Forms.Button();
+            this.buttonClear1 = new System.Windows.Forms.Button();
+            this.buttonAir1 = new System.Windows.Forms.Button();
+            this.buttonClear2 = new System.Windows.Forms.Button();
+            this.buttonClear3 = new System.Windows.Forms.Button();
+            this.buttonClear4 = new System.Windows.Forms.Button();
+            this.buttonClear5 = new System.Windows.Forms.Button();
+            this.buttonClear6 = new System.Windows.Forms.Button();
+            this.buttonAir2 = new System.Windows.Forms.Button();
+            this.buttonAir3 = new System.Windows.Forms.Button();
+            this.buttonAir4 = new System.Windows.Forms.Button();
+            this.buttonAir5 = new System.Windows.Forms.Button();
+            this.buttonAir6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -161,6 +174,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonAir6);
+            this.groupBox1.Controls.Add(this.buttonAir5);
+            this.groupBox1.Controls.Add(this.buttonAir4);
+            this.groupBox1.Controls.Add(this.buttonAir3);
+            this.groupBox1.Controls.Add(this.buttonAir2);
+            this.groupBox1.Controls.Add(this.buttonClear6);
+            this.groupBox1.Controls.Add(this.buttonClear5);
+            this.groupBox1.Controls.Add(this.buttonClear4);
+            this.groupBox1.Controls.Add(this.buttonClear3);
+            this.groupBox1.Controls.Add(this.buttonClear2);
+            this.groupBox1.Controls.Add(this.buttonAir1);
+            this.groupBox1.Controls.Add(this.buttonClear1);
             this.groupBox1.Controls.Add(this.labelSet62);
             this.groupBox1.Controls.Add(this.labelSet61);
             this.groupBox1.Controls.Add(this.labelSet52);
@@ -379,6 +404,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.buttonVzInit);
             this.tabPage1.Controls.Add(this.buttonLoadScene);
             this.tabPage1.Controls.Add(this.buttonInsertOff);
             this.tabPage1.Controls.Add(this.buttonInsertOn);
@@ -400,7 +426,7 @@
             // 
             // buttonLoadScene
             // 
-            this.buttonLoadScene.Location = new System.Drawing.Point(25, 25);
+            this.buttonLoadScene.Location = new System.Drawing.Point(157, 25);
             this.buttonLoadScene.Name = "buttonLoadScene";
             this.buttonLoadScene.Size = new System.Drawing.Size(83, 23);
             this.buttonLoadScene.TabIndex = 12;
@@ -410,7 +436,7 @@
             // 
             // buttonInsertOff
             // 
-            this.buttonInsertOff.Location = new System.Drawing.Point(259, 25);
+            this.buttonInsertOff.Location = new System.Drawing.Point(332, 25);
             this.buttonInsertOff.Name = "buttonInsertOff";
             this.buttonInsertOff.Size = new System.Drawing.Size(75, 23);
             this.buttonInsertOff.TabIndex = 11;
@@ -420,7 +446,7 @@
             // 
             // buttonInsertOn
             // 
-            this.buttonInsertOn.Location = new System.Drawing.Point(178, 25);
+            this.buttonInsertOn.Location = new System.Drawing.Point(252, 25);
             this.buttonInsertOn.Name = "buttonInsertOn";
             this.buttonInsertOn.Size = new System.Drawing.Size(75, 23);
             this.buttonInsertOn.TabIndex = 10;
@@ -678,12 +704,158 @@
             this.buttonCrawlAppend.UseVisualStyleBackColor = true;
             this.buttonCrawlAppend.Click += new System.EventHandler(this.buttonCrawlAppend_Click);
             // 
+            // buttonVzInit
+            // 
+            this.buttonVzInit.Location = new System.Drawing.Point(15, 15);
+            this.buttonVzInit.Name = "buttonVzInit";
+            this.buttonVzInit.Size = new System.Drawing.Size(75, 42);
+            this.buttonVzInit.TabIndex = 13;
+            this.buttonVzInit.Text = "Auf Anfang";
+            this.buttonVzInit.UseVisualStyleBackColor = true;
+            this.buttonVzInit.Click += new System.EventHandler(this.buttonVzInit_Click);
+            // 
+            // buttonClear1
+            // 
+            this.buttonClear1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear1.Location = new System.Drawing.Point(305, 149);
+            this.buttonClear1.Name = "buttonClear1";
+            this.buttonClear1.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear1.TabIndex = 19;
+            this.buttonClear1.Text = "leer";
+            this.buttonClear1.UseVisualStyleBackColor = false;
+            this.buttonClear1.Click += new System.EventHandler(this.buttonClear1_Click);
+            // 
+            // buttonAir1
+            // 
+            this.buttonAir1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir1.Location = new System.Drawing.Point(344, 149);
+            this.buttonAir1.Name = "buttonAir1";
+            this.buttonAir1.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir1.TabIndex = 20;
+            this.buttonAir1.Text = "OnAir";
+            this.buttonAir1.UseVisualStyleBackColor = false;
+            this.buttonAir1.Click += new System.EventHandler(this.buttonAir1_Click);
+            // 
+            // buttonClear2
+            // 
+            this.buttonClear2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear2.Location = new System.Drawing.Point(305, 191);
+            this.buttonClear2.Name = "buttonClear2";
+            this.buttonClear2.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear2.TabIndex = 21;
+            this.buttonClear2.Text = "leer";
+            this.buttonClear2.UseVisualStyleBackColor = false;
+            this.buttonClear2.Click += new System.EventHandler(this.buttonClear2_Click);
+            // 
+            // buttonClear3
+            // 
+            this.buttonClear3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear3.Location = new System.Drawing.Point(305, 233);
+            this.buttonClear3.Name = "buttonClear3";
+            this.buttonClear3.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear3.TabIndex = 22;
+            this.buttonClear3.Text = "leer";
+            this.buttonClear3.UseVisualStyleBackColor = false;
+            this.buttonClear3.Click += new System.EventHandler(this.buttonClear3_Click);
+            // 
+            // buttonClear4
+            // 
+            this.buttonClear4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear4.Location = new System.Drawing.Point(305, 274);
+            this.buttonClear4.Name = "buttonClear4";
+            this.buttonClear4.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear4.TabIndex = 23;
+            this.buttonClear4.Text = "leer";
+            this.buttonClear4.UseVisualStyleBackColor = false;
+            this.buttonClear4.Click += new System.EventHandler(this.buttonClear4_Click);
+            // 
+            // buttonClear5
+            // 
+            this.buttonClear5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear5.Location = new System.Drawing.Point(305, 316);
+            this.buttonClear5.Name = "buttonClear5";
+            this.buttonClear5.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear5.TabIndex = 24;
+            this.buttonClear5.Text = "leer";
+            this.buttonClear5.UseVisualStyleBackColor = false;
+            this.buttonClear5.Click += new System.EventHandler(this.buttonClear5_Click);
+            // 
+            // buttonClear6
+            // 
+            this.buttonClear6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear6.Location = new System.Drawing.Point(305, 357);
+            this.buttonClear6.Name = "buttonClear6";
+            this.buttonClear6.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear6.TabIndex = 25;
+            this.buttonClear6.Text = "leer";
+            this.buttonClear6.UseVisualStyleBackColor = false;
+            this.buttonClear6.Click += new System.EventHandler(this.buttonClear6_Click);
+            // 
+            // buttonAir2
+            // 
+            this.buttonAir2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir2.Location = new System.Drawing.Point(344, 191);
+            this.buttonAir2.Name = "buttonAir2";
+            this.buttonAir2.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir2.TabIndex = 26;
+            this.buttonAir2.Text = "OnAir";
+            this.buttonAir2.UseVisualStyleBackColor = false;
+            this.buttonAir2.Click += new System.EventHandler(this.buttonAir2_Click);
+            // 
+            // buttonAir3
+            // 
+            this.buttonAir3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir3.Location = new System.Drawing.Point(344, 233);
+            this.buttonAir3.Name = "buttonAir3";
+            this.buttonAir3.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir3.TabIndex = 27;
+            this.buttonAir3.Text = "OnAir";
+            this.buttonAir3.UseVisualStyleBackColor = false;
+            this.buttonAir3.Click += new System.EventHandler(this.buttonAir3_Click);
+            // 
+            // buttonAir4
+            // 
+            this.buttonAir4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir4.Location = new System.Drawing.Point(344, 274);
+            this.buttonAir4.Name = "buttonAir4";
+            this.buttonAir4.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir4.TabIndex = 28;
+            this.buttonAir4.Text = "OnAir";
+            this.buttonAir4.UseVisualStyleBackColor = false;
+            this.buttonAir4.Click += new System.EventHandler(this.buttonAir4_Click);
+            // 
+            // buttonAir5
+            // 
+            this.buttonAir5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir5.Location = new System.Drawing.Point(344, 316);
+            this.buttonAir5.Name = "buttonAir5";
+            this.buttonAir5.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir5.TabIndex = 29;
+            this.buttonAir5.Text = "OnAir";
+            this.buttonAir5.UseVisualStyleBackColor = false;
+            this.buttonAir5.Click += new System.EventHandler(this.buttonAir5_Click);
+            // 
+            // buttonAir6
+            // 
+            this.buttonAir6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir6.Location = new System.Drawing.Point(344, 357);
+            this.buttonAir6.Name = "buttonAir6";
+            this.buttonAir6.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir6.TabIndex = 30;
+            this.buttonAir6.Text = "OnAir";
+            this.buttonAir6.UseVisualStyleBackColor = false;
+            this.buttonAir6.Click += new System.EventHandler(this.buttonAir6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 523);
+            this.ClientSize = new System.Drawing.Size(463, 529);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(473, 561);
+            this.MinimumSize = new System.Drawing.Size(473, 561);
             this.Name = "Form1";
             this.Text = "VZ-Interface GMF";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -761,6 +933,19 @@
         private System.Windows.Forms.Button buttonCrawlLoopOn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button buttonCrawlAppend;
+        private System.Windows.Forms.Button buttonVzInit;
+        private System.Windows.Forms.Button buttonClear6;
+        private System.Windows.Forms.Button buttonClear5;
+        private System.Windows.Forms.Button buttonClear4;
+        private System.Windows.Forms.Button buttonClear3;
+        private System.Windows.Forms.Button buttonClear2;
+        private System.Windows.Forms.Button buttonAir1;
+        private System.Windows.Forms.Button buttonClear1;
+        private System.Windows.Forms.Button buttonAir6;
+        private System.Windows.Forms.Button buttonAir5;
+        private System.Windows.Forms.Button buttonAir4;
+        private System.Windows.Forms.Button buttonAir3;
+        private System.Windows.Forms.Button buttonAir2;
     }
 }
 

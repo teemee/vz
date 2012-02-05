@@ -32,9 +32,7 @@ namespace WindowsFormsApplication1
             String senderExePfad = boxSenderPfad.Text;
             String insert1 = insertLine1.Text;
             String insert2 = insertLine2.Text;
-            String testcmdline = senderExePfad + " " + server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
             String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
-            testLabel.Text = testcmdline;
             String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
 
             Process proc = new Process();
@@ -426,6 +424,192 @@ namespace WindowsFormsApplication1
 
             //Ausführen der Sender-Exe zu VZ mit übergabe von 'arguments'
             //und Unterdrückung vom Konsolenfenster und so Kram
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        //Button "Auf anfang" - neuladen der Szene und einblenden der Bauchbinde
+        private void buttonVzInit_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String blubb = server + " LOAD_SCENE ./projects/guten-morgen-filstal/guten-morgen-filstal.xml START_DIRECTOR main 0";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+        //Realisierung der 6 leeren-Buttons der 6 Slots - schreibt einfach ---- in den jeweiligen Slot
+        private void buttonClear1_Click(object sender, EventArgs e)
+        {
+            labelSet11.Text = "----";
+            labelSet12.Text = "----";
+        }
+
+        private void buttonClear2_Click(object sender, EventArgs e)
+        {
+            labelSet21.Text = "----";
+            labelSet22.Text = "----";
+        }
+
+        private void buttonClear3_Click(object sender, EventArgs e)
+        {
+            labelSet31.Text = "----";
+            labelSet32.Text = "----";
+        }
+
+        private void buttonClear4_Click(object sender, EventArgs e)
+        {
+            labelSet41.Text = "----";
+            labelSet42.Text = "----";
+        }
+
+        private void buttonClear5_Click(object sender, EventArgs e)
+        {
+            labelSet51.Text = "----";
+            labelSet52.Text = "----";
+        }
+
+        private void buttonClear6_Click(object sender, EventArgs e)
+        {
+            labelSet61.Text = "----";
+            labelSet62.Text = "----";
+        }
+
+        // OnAir Buttons der Slots.
+        private void buttonAir1_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            //einlesen der Slot-Labels
+            String insert1 = labelSet11.Text;
+            String insert2 = labelSet12.Text;
+            //Bauen den Control-Strings für VZ
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            //Wandlung in UTF8 und übergabe an Kommandozeile
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonAir2_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = labelSet21.Text;
+            String insert2 = labelSet22.Text;
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonAir3_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = labelSet31.Text;
+            String insert2 = labelSet32.Text;
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonAir4_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = labelSet41.Text;
+            String insert2 = labelSet42.Text;
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonAir5_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = labelSet51.Text;
+            String insert2 = labelSet52.Text;
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
+            Process proc = new Process();
+            proc.StartInfo.FileName = senderExePfad;
+            proc.StartInfo.Arguments = arguments;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            proc.Start();
+            proc.WaitForExit();
+            proc.Close();
+        }
+
+        private void buttonAir6_Click(object sender, EventArgs e)
+        {
+            String server = textBoxServer.Text;
+            String senderExePfad = boxSenderPfad.Text;
+            String insert1 = labelSet61.Text;
+            String insert2 = labelSet62.Text;
+            String blubb = server + " SET InfoZ1 s_text \"" + insert1 + "\"" + " SET InfoZ2 s_text \"" + insert2 + "\"";
+            String arguments = Encoding.Default.GetString(Encoding.UTF8.GetBytes(blubb));
+
             Process proc = new Process();
             proc.StartInfo.FileName = senderExePfad;
             proc.StartInfo.Arguments = arguments;
