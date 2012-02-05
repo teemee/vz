@@ -36,6 +36,18 @@
             this.insertZeile1verbleibend = new System.Windows.Forms.Label();
             this.insertZeile2verbleibend = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonAir6 = new System.Windows.Forms.Button();
+            this.buttonAir5 = new System.Windows.Forms.Button();
+            this.buttonAir4 = new System.Windows.Forms.Button();
+            this.buttonAir3 = new System.Windows.Forms.Button();
+            this.buttonAir2 = new System.Windows.Forms.Button();
+            this.buttonClear6 = new System.Windows.Forms.Button();
+            this.buttonClear5 = new System.Windows.Forms.Button();
+            this.buttonClear4 = new System.Windows.Forms.Button();
+            this.buttonClear3 = new System.Windows.Forms.Button();
+            this.buttonClear2 = new System.Windows.Forms.Button();
+            this.buttonAir1 = new System.Windows.Forms.Button();
+            this.buttonClear1 = new System.Windows.Forms.Button();
             this.labelSet62 = new System.Windows.Forms.Label();
             this.labelSet61 = new System.Windows.Forms.Label();
             this.labelSet52 = new System.Windows.Forms.Label();
@@ -57,11 +69,17 @@
             this.labelSet11 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.buttonVzInit = new System.Windows.Forms.Button();
             this.buttonLoadScene = new System.Windows.Forms.Button();
             this.buttonInsertOff = new System.Windows.Forms.Button();
             this.buttonInsertOn = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCrawlAppend = new System.Windows.Forms.Button();
+            this.buttonCrawlReset = new System.Windows.Forms.Button();
+            this.buttonCrawlLoopOff = new System.Windows.Forms.Button();
+            this.buttonCrawlLoopOn = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.buttonSaveCrawl = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.textBoxCrawler = new System.Windows.Forms.TextBox();
@@ -73,7 +91,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.boxCrawlerPfad = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.testLabel = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.buttonOpenSender = new System.Windows.Forms.Button();
             this.boxSenderPfad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -81,24 +100,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openCrawlerFile = new System.Windows.Forms.OpenFileDialog();
             this.openSenderExe = new System.Windows.Forms.OpenFileDialog();
-            this.label8 = new System.Windows.Forms.Label();
-            this.buttonCrawlLoopOn = new System.Windows.Forms.Button();
-            this.buttonCrawlLoopOff = new System.Windows.Forms.Button();
-            this.buttonCrawlReset = new System.Windows.Forms.Button();
-            this.buttonCrawlAppend = new System.Windows.Forms.Button();
-            this.buttonVzInit = new System.Windows.Forms.Button();
-            this.buttonClear1 = new System.Windows.Forms.Button();
-            this.buttonAir1 = new System.Windows.Forms.Button();
-            this.buttonClear2 = new System.Windows.Forms.Button();
-            this.buttonClear3 = new System.Windows.Forms.Button();
-            this.buttonClear4 = new System.Windows.Forms.Button();
-            this.buttonClear5 = new System.Windows.Forms.Button();
-            this.buttonClear6 = new System.Windows.Forms.Button();
-            this.buttonAir2 = new System.Windows.Forms.Button();
-            this.buttonAir3 = new System.Windows.Forms.Button();
-            this.buttonAir4 = new System.Windows.Forms.Button();
-            this.buttonAir5 = new System.Windows.Forms.Button();
-            this.buttonAir6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -211,6 +212,138 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Insert";
+            // 
+            // buttonAir6
+            // 
+            this.buttonAir6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir6.Location = new System.Drawing.Point(344, 357);
+            this.buttonAir6.Name = "buttonAir6";
+            this.buttonAir6.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir6.TabIndex = 30;
+            this.buttonAir6.Text = "OnAir";
+            this.buttonAir6.UseVisualStyleBackColor = false;
+            this.buttonAir6.Click += new System.EventHandler(this.buttonAir6_Click);
+            // 
+            // buttonAir5
+            // 
+            this.buttonAir5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir5.Location = new System.Drawing.Point(344, 316);
+            this.buttonAir5.Name = "buttonAir5";
+            this.buttonAir5.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir5.TabIndex = 29;
+            this.buttonAir5.Text = "OnAir";
+            this.buttonAir5.UseVisualStyleBackColor = false;
+            this.buttonAir5.Click += new System.EventHandler(this.buttonAir5_Click);
+            // 
+            // buttonAir4
+            // 
+            this.buttonAir4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir4.Location = new System.Drawing.Point(344, 274);
+            this.buttonAir4.Name = "buttonAir4";
+            this.buttonAir4.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir4.TabIndex = 28;
+            this.buttonAir4.Text = "OnAir";
+            this.buttonAir4.UseVisualStyleBackColor = false;
+            this.buttonAir4.Click += new System.EventHandler(this.buttonAir4_Click);
+            // 
+            // buttonAir3
+            // 
+            this.buttonAir3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir3.Location = new System.Drawing.Point(344, 233);
+            this.buttonAir3.Name = "buttonAir3";
+            this.buttonAir3.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir3.TabIndex = 27;
+            this.buttonAir3.Text = "OnAir";
+            this.buttonAir3.UseVisualStyleBackColor = false;
+            this.buttonAir3.Click += new System.EventHandler(this.buttonAir3_Click);
+            // 
+            // buttonAir2
+            // 
+            this.buttonAir2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir2.Location = new System.Drawing.Point(344, 191);
+            this.buttonAir2.Name = "buttonAir2";
+            this.buttonAir2.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir2.TabIndex = 26;
+            this.buttonAir2.Text = "OnAir";
+            this.buttonAir2.UseVisualStyleBackColor = false;
+            this.buttonAir2.Click += new System.EventHandler(this.buttonAir2_Click);
+            // 
+            // buttonClear6
+            // 
+            this.buttonClear6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear6.Location = new System.Drawing.Point(305, 357);
+            this.buttonClear6.Name = "buttonClear6";
+            this.buttonClear6.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear6.TabIndex = 25;
+            this.buttonClear6.Text = "leer";
+            this.buttonClear6.UseVisualStyleBackColor = false;
+            this.buttonClear6.Click += new System.EventHandler(this.buttonClear6_Click);
+            // 
+            // buttonClear5
+            // 
+            this.buttonClear5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear5.Location = new System.Drawing.Point(305, 316);
+            this.buttonClear5.Name = "buttonClear5";
+            this.buttonClear5.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear5.TabIndex = 24;
+            this.buttonClear5.Text = "leer";
+            this.buttonClear5.UseVisualStyleBackColor = false;
+            this.buttonClear5.Click += new System.EventHandler(this.buttonClear5_Click);
+            // 
+            // buttonClear4
+            // 
+            this.buttonClear4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear4.Location = new System.Drawing.Point(305, 274);
+            this.buttonClear4.Name = "buttonClear4";
+            this.buttonClear4.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear4.TabIndex = 23;
+            this.buttonClear4.Text = "leer";
+            this.buttonClear4.UseVisualStyleBackColor = false;
+            this.buttonClear4.Click += new System.EventHandler(this.buttonClear4_Click);
+            // 
+            // buttonClear3
+            // 
+            this.buttonClear3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear3.Location = new System.Drawing.Point(305, 233);
+            this.buttonClear3.Name = "buttonClear3";
+            this.buttonClear3.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear3.TabIndex = 22;
+            this.buttonClear3.Text = "leer";
+            this.buttonClear3.UseVisualStyleBackColor = false;
+            this.buttonClear3.Click += new System.EventHandler(this.buttonClear3_Click);
+            // 
+            // buttonClear2
+            // 
+            this.buttonClear2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear2.Location = new System.Drawing.Point(305, 191);
+            this.buttonClear2.Name = "buttonClear2";
+            this.buttonClear2.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear2.TabIndex = 21;
+            this.buttonClear2.Text = "leer";
+            this.buttonClear2.UseVisualStyleBackColor = false;
+            this.buttonClear2.Click += new System.EventHandler(this.buttonClear2_Click);
+            // 
+            // buttonAir1
+            // 
+            this.buttonAir1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAir1.Location = new System.Drawing.Point(344, 149);
+            this.buttonAir1.Name = "buttonAir1";
+            this.buttonAir1.Size = new System.Drawing.Size(41, 23);
+            this.buttonAir1.TabIndex = 20;
+            this.buttonAir1.Text = "OnAir";
+            this.buttonAir1.UseVisualStyleBackColor = false;
+            this.buttonAir1.Click += new System.EventHandler(this.buttonAir1_Click);
+            // 
+            // buttonClear1
+            // 
+            this.buttonClear1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClear1.Location = new System.Drawing.Point(305, 149);
+            this.buttonClear1.Name = "buttonClear1";
+            this.buttonClear1.Size = new System.Drawing.Size(32, 23);
+            this.buttonClear1.TabIndex = 19;
+            this.buttonClear1.Text = "leer";
+            this.buttonClear1.UseVisualStyleBackColor = false;
+            this.buttonClear1.Click += new System.EventHandler(this.buttonClear1_Click);
             // 
             // labelSet62
             // 
@@ -424,6 +557,16 @@
             this.tabPage1.Text = "Insert";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // buttonVzInit
+            // 
+            this.buttonVzInit.Location = new System.Drawing.Point(15, 15);
+            this.buttonVzInit.Name = "buttonVzInit";
+            this.buttonVzInit.Size = new System.Drawing.Size(75, 42);
+            this.buttonVzInit.TabIndex = 13;
+            this.buttonVzInit.Text = "Auf Anfang";
+            this.buttonVzInit.UseVisualStyleBackColor = true;
+            this.buttonVzInit.Click += new System.EventHandler(this.buttonVzInit_Click);
+            // 
             // buttonLoadScene
             // 
             this.buttonLoadScene.Location = new System.Drawing.Point(157, 25);
@@ -487,6 +630,55 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Crawler";
+            // 
+            // buttonCrawlAppend
+            // 
+            this.buttonCrawlAppend.Location = new System.Drawing.Point(292, 411);
+            this.buttonCrawlAppend.Name = "buttonCrawlAppend";
+            this.buttonCrawlAppend.Size = new System.Drawing.Size(82, 23);
+            this.buttonCrawlAppend.TabIndex = 18;
+            this.buttonCrawlAppend.Text = "Crawl append";
+            this.buttonCrawlAppend.UseVisualStyleBackColor = true;
+            this.buttonCrawlAppend.Click += new System.EventHandler(this.buttonCrawlAppend_Click);
+            // 
+            // buttonCrawlReset
+            // 
+            this.buttonCrawlReset.Location = new System.Drawing.Point(198, 411);
+            this.buttonCrawlReset.Name = "buttonCrawlReset";
+            this.buttonCrawlReset.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlReset.TabIndex = 17;
+            this.buttonCrawlReset.Text = "Crawl reset";
+            this.buttonCrawlReset.UseVisualStyleBackColor = true;
+            this.buttonCrawlReset.Click += new System.EventHandler(this.buttonCrawlReset_Click);
+            // 
+            // buttonCrawlLoopOff
+            // 
+            this.buttonCrawlLoopOff.Location = new System.Drawing.Point(103, 411);
+            this.buttonCrawlLoopOff.Name = "buttonCrawlLoopOff";
+            this.buttonCrawlLoopOff.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlLoopOff.TabIndex = 16;
+            this.buttonCrawlLoopOff.Text = "Crawl loop off";
+            this.buttonCrawlLoopOff.UseVisualStyleBackColor = true;
+            this.buttonCrawlLoopOff.Click += new System.EventHandler(this.buttonCrawlLoopOff_Click);
+            // 
+            // buttonCrawlLoopOn
+            // 
+            this.buttonCrawlLoopOn.Location = new System.Drawing.Point(9, 411);
+            this.buttonCrawlLoopOn.Name = "buttonCrawlLoopOn";
+            this.buttonCrawlLoopOn.Size = new System.Drawing.Size(79, 23);
+            this.buttonCrawlLoopOn.TabIndex = 15;
+            this.buttonCrawlLoopOn.Text = "Crawl loop on";
+            this.buttonCrawlLoopOn.UseVisualStyleBackColor = true;
+            this.buttonCrawlLoopOn.Click += new System.EventHandler(this.buttonCrawlLoopOn_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Text für Crawler";
             // 
             // buttonSaveCrawl
             // 
@@ -580,7 +772,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.testLabel);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.buttonOpenSender);
             this.tabPage2.Controls.Add(this.boxSenderPfad);
             this.tabPage2.Controls.Add(this.label5);
@@ -594,14 +787,24 @@
             this.tabPage2.Text = "Einstellungen";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // testLabel
+            // label9
             // 
-            this.testLabel.AutoSize = true;
-            this.testLabel.Location = new System.Drawing.Point(20, 177);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(35, 13);
-            this.testLabel.TabIndex = 5;
-            this.testLabel.Text = "label6";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(20, 246);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(313, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Kleines Progrämmchen zum Steuern des Fips-GMF-Grafiksystems";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(23, 132);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Schreibe Config";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonOpenSender
             // 
@@ -631,7 +834,7 @@
             // 
             // textBoxServer
             // 
-            this.textBoxServer.Location = new System.Drawing.Point(62, 17);
+            this.textBoxServer.Location = new System.Drawing.Point(23, 36);
             this.textBoxServer.Name = "textBoxServer";
             this.textBoxServer.Size = new System.Drawing.Size(117, 20);
             this.textBoxServer.TabIndex = 1;
@@ -654,197 +857,6 @@
             // 
             this.openSenderExe.FileName = "openFileDialog1";
             this.openSenderExe.FileOk += new System.ComponentModel.CancelEventHandler(this.openSenderExe_FileOk);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 136);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Text für Crawler";
-            // 
-            // buttonCrawlLoopOn
-            // 
-            this.buttonCrawlLoopOn.Location = new System.Drawing.Point(9, 411);
-            this.buttonCrawlLoopOn.Name = "buttonCrawlLoopOn";
-            this.buttonCrawlLoopOn.Size = new System.Drawing.Size(79, 23);
-            this.buttonCrawlLoopOn.TabIndex = 15;
-            this.buttonCrawlLoopOn.Text = "Crawl loop on";
-            this.buttonCrawlLoopOn.UseVisualStyleBackColor = true;
-            this.buttonCrawlLoopOn.Click += new System.EventHandler(this.buttonCrawlLoopOn_Click);
-            // 
-            // buttonCrawlLoopOff
-            // 
-            this.buttonCrawlLoopOff.Location = new System.Drawing.Point(103, 411);
-            this.buttonCrawlLoopOff.Name = "buttonCrawlLoopOff";
-            this.buttonCrawlLoopOff.Size = new System.Drawing.Size(79, 23);
-            this.buttonCrawlLoopOff.TabIndex = 16;
-            this.buttonCrawlLoopOff.Text = "Crawl loop off";
-            this.buttonCrawlLoopOff.UseVisualStyleBackColor = true;
-            this.buttonCrawlLoopOff.Click += new System.EventHandler(this.buttonCrawlLoopOff_Click);
-            // 
-            // buttonCrawlReset
-            // 
-            this.buttonCrawlReset.Location = new System.Drawing.Point(198, 411);
-            this.buttonCrawlReset.Name = "buttonCrawlReset";
-            this.buttonCrawlReset.Size = new System.Drawing.Size(79, 23);
-            this.buttonCrawlReset.TabIndex = 17;
-            this.buttonCrawlReset.Text = "Crawl reset";
-            this.buttonCrawlReset.UseVisualStyleBackColor = true;
-            this.buttonCrawlReset.Click += new System.EventHandler(this.buttonCrawlReset_Click);
-            // 
-            // buttonCrawlAppend
-            // 
-            this.buttonCrawlAppend.Location = new System.Drawing.Point(292, 411);
-            this.buttonCrawlAppend.Name = "buttonCrawlAppend";
-            this.buttonCrawlAppend.Size = new System.Drawing.Size(82, 23);
-            this.buttonCrawlAppend.TabIndex = 18;
-            this.buttonCrawlAppend.Text = "Crawl append";
-            this.buttonCrawlAppend.UseVisualStyleBackColor = true;
-            this.buttonCrawlAppend.Click += new System.EventHandler(this.buttonCrawlAppend_Click);
-            // 
-            // buttonVzInit
-            // 
-            this.buttonVzInit.Location = new System.Drawing.Point(15, 15);
-            this.buttonVzInit.Name = "buttonVzInit";
-            this.buttonVzInit.Size = new System.Drawing.Size(75, 42);
-            this.buttonVzInit.TabIndex = 13;
-            this.buttonVzInit.Text = "Auf Anfang";
-            this.buttonVzInit.UseVisualStyleBackColor = true;
-            this.buttonVzInit.Click += new System.EventHandler(this.buttonVzInit_Click);
-            // 
-            // buttonClear1
-            // 
-            this.buttonClear1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear1.Location = new System.Drawing.Point(305, 149);
-            this.buttonClear1.Name = "buttonClear1";
-            this.buttonClear1.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear1.TabIndex = 19;
-            this.buttonClear1.Text = "leer";
-            this.buttonClear1.UseVisualStyleBackColor = false;
-            this.buttonClear1.Click += new System.EventHandler(this.buttonClear1_Click);
-            // 
-            // buttonAir1
-            // 
-            this.buttonAir1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir1.Location = new System.Drawing.Point(344, 149);
-            this.buttonAir1.Name = "buttonAir1";
-            this.buttonAir1.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir1.TabIndex = 20;
-            this.buttonAir1.Text = "OnAir";
-            this.buttonAir1.UseVisualStyleBackColor = false;
-            this.buttonAir1.Click += new System.EventHandler(this.buttonAir1_Click);
-            // 
-            // buttonClear2
-            // 
-            this.buttonClear2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear2.Location = new System.Drawing.Point(305, 191);
-            this.buttonClear2.Name = "buttonClear2";
-            this.buttonClear2.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear2.TabIndex = 21;
-            this.buttonClear2.Text = "leer";
-            this.buttonClear2.UseVisualStyleBackColor = false;
-            this.buttonClear2.Click += new System.EventHandler(this.buttonClear2_Click);
-            // 
-            // buttonClear3
-            // 
-            this.buttonClear3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear3.Location = new System.Drawing.Point(305, 233);
-            this.buttonClear3.Name = "buttonClear3";
-            this.buttonClear3.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear3.TabIndex = 22;
-            this.buttonClear3.Text = "leer";
-            this.buttonClear3.UseVisualStyleBackColor = false;
-            this.buttonClear3.Click += new System.EventHandler(this.buttonClear3_Click);
-            // 
-            // buttonClear4
-            // 
-            this.buttonClear4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear4.Location = new System.Drawing.Point(305, 274);
-            this.buttonClear4.Name = "buttonClear4";
-            this.buttonClear4.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear4.TabIndex = 23;
-            this.buttonClear4.Text = "leer";
-            this.buttonClear4.UseVisualStyleBackColor = false;
-            this.buttonClear4.Click += new System.EventHandler(this.buttonClear4_Click);
-            // 
-            // buttonClear5
-            // 
-            this.buttonClear5.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear5.Location = new System.Drawing.Point(305, 316);
-            this.buttonClear5.Name = "buttonClear5";
-            this.buttonClear5.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear5.TabIndex = 24;
-            this.buttonClear5.Text = "leer";
-            this.buttonClear5.UseVisualStyleBackColor = false;
-            this.buttonClear5.Click += new System.EventHandler(this.buttonClear5_Click);
-            // 
-            // buttonClear6
-            // 
-            this.buttonClear6.BackColor = System.Drawing.Color.Transparent;
-            this.buttonClear6.Location = new System.Drawing.Point(305, 357);
-            this.buttonClear6.Name = "buttonClear6";
-            this.buttonClear6.Size = new System.Drawing.Size(32, 23);
-            this.buttonClear6.TabIndex = 25;
-            this.buttonClear6.Text = "leer";
-            this.buttonClear6.UseVisualStyleBackColor = false;
-            this.buttonClear6.Click += new System.EventHandler(this.buttonClear6_Click);
-            // 
-            // buttonAir2
-            // 
-            this.buttonAir2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir2.Location = new System.Drawing.Point(344, 191);
-            this.buttonAir2.Name = "buttonAir2";
-            this.buttonAir2.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir2.TabIndex = 26;
-            this.buttonAir2.Text = "OnAir";
-            this.buttonAir2.UseVisualStyleBackColor = false;
-            this.buttonAir2.Click += new System.EventHandler(this.buttonAir2_Click);
-            // 
-            // buttonAir3
-            // 
-            this.buttonAir3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir3.Location = new System.Drawing.Point(344, 233);
-            this.buttonAir3.Name = "buttonAir3";
-            this.buttonAir3.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir3.TabIndex = 27;
-            this.buttonAir3.Text = "OnAir";
-            this.buttonAir3.UseVisualStyleBackColor = false;
-            this.buttonAir3.Click += new System.EventHandler(this.buttonAir3_Click);
-            // 
-            // buttonAir4
-            // 
-            this.buttonAir4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir4.Location = new System.Drawing.Point(344, 274);
-            this.buttonAir4.Name = "buttonAir4";
-            this.buttonAir4.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir4.TabIndex = 28;
-            this.buttonAir4.Text = "OnAir";
-            this.buttonAir4.UseVisualStyleBackColor = false;
-            this.buttonAir4.Click += new System.EventHandler(this.buttonAir4_Click);
-            // 
-            // buttonAir5
-            // 
-            this.buttonAir5.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir5.Location = new System.Drawing.Point(344, 316);
-            this.buttonAir5.Name = "buttonAir5";
-            this.buttonAir5.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir5.TabIndex = 29;
-            this.buttonAir5.Text = "OnAir";
-            this.buttonAir5.UseVisualStyleBackColor = false;
-            this.buttonAir5.Click += new System.EventHandler(this.buttonAir5_Click);
-            // 
-            // buttonAir6
-            // 
-            this.buttonAir6.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAir6.Location = new System.Drawing.Point(344, 357);
-            this.buttonAir6.Name = "buttonAir6";
-            this.buttonAir6.Size = new System.Drawing.Size(41, 23);
-            this.buttonAir6.TabIndex = 30;
-            this.buttonAir6.Text = "OnAir";
-            this.buttonAir6.UseVisualStyleBackColor = false;
-            this.buttonAir6.Click += new System.EventHandler(this.buttonAir6_Click);
             // 
             // Form1
             // 
@@ -893,7 +905,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxServer;
         private System.Windows.Forms.OpenFileDialog openSenderExe;
-        private System.Windows.Forms.Label testLabel;
         private System.Windows.Forms.Button buttonInsertOff;
         private System.Windows.Forms.Button buttonInsertOn;
         private System.Windows.Forms.Button buttonLoadScene;
@@ -946,6 +957,8 @@
         private System.Windows.Forms.Button buttonAir4;
         private System.Windows.Forms.Button buttonAir3;
         private System.Windows.Forms.Button buttonAir2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
     }
 }
 

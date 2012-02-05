@@ -622,6 +622,17 @@ namespace WindowsFormsApplication1
             proc.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IniFile ini = new IniFile(".\\vzconfig.ini");
+            ini.Write("init", "server", textBoxServer.Text);
+            ini.Write("init", "VzSenderExe", boxSenderPfad.Text);
+
+            // Lesen mit ini.Read("init", "server"));
+        }
+
+        
+
       
 
      

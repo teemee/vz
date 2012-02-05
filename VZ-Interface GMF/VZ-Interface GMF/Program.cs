@@ -33,33 +33,43 @@ namespace WindowsFormsApplication1
 
         public class IniFile
         {
-            public string path;
-
-            //hier soll mal noch ne ini realisiert werden. Um einstellungen dauerhaft speichern zu können
+            private string filePath;
+         
             [DllImport("kernel32")]
             private static extern long WritePrivateProfileString(string section,
-              string key, string val, string filePath);
-
+            string key,
+            string val,
+            string filePath);
+ 
             [DllImport("kernel32")]
             private static extern int GetPrivateProfileString(string section,
-              string key, string def, StringBuilder retVal,
-              int size, string filePath);
-
-            public IniFile(string INIPath)
+            string key,
+            string def,
+            StringBuilder retVal,
+            int size,
+            string filePath);
+        
+            public IniFile(string filePath)
             {
-                path = INIPath;
+                this.filePath = filePath;
             }
-
-            public void IniWriteValue(string Section, string Key, string Value)
+ 
+            public void Write(string section, string key, string value)
             {
-                WritePrivateProfileString(Section, Key, Value, this.path);
+                WritePrivateProfileString(section, key, value.ToLower(), this.filePath);
             }
-
-            public string IniReadValue(string Section, string Key)
+ 
+            public string Read(string section, string key)
             {
-                StringBuilder temp = new StringBuilder(255);
-                int i = GetPrivateProfileString(Section, Key, "", temp, 255, this.path);
-                return temp.ToString();
+                StringBuilder SB = new StringBuilder(255);
+                int i = GetPrivateProfileString(section, key, "", SB, 255, this.filePath);
+                return SB.ToString();
+            }
+         
+            public string FilePath
+            {
+                get { return this.filePath; }
+                set { this.filePath = value; }
             }
         }
 
