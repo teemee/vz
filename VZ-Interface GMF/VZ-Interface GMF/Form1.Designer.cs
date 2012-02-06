@@ -838,6 +838,7 @@
             this.textBoxServer.Name = "textBoxServer";
             this.textBoxServer.Size = new System.Drawing.Size(117, 20);
             this.textBoxServer.TabIndex = 1;
+            this.textBoxServer.Text = "fips-vz-server";
             // 
             // label4
             // 
@@ -862,7 +863,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 529);
+            this.ClientSize = new System.Drawing.Size(463, 532);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;

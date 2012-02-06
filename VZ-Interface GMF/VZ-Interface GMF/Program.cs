@@ -21,6 +21,12 @@ namespace WindowsFormsApplication1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            //ini-File-Objekt anlegen
+            
+            
+            
+
+
             //Hier soll die überprüfung OnFileChange für den Crawler passieren
             FileSystemWatcher watch = new FileSystemWatcher();
             watch.Path = vars.crawlerPath;

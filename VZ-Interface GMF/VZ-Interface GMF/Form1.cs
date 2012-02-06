@@ -17,6 +17,9 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            IniFile ini = new IniFile("C:\\vzconfig.ini");
+            textBoxServer.Text = ini.Read("init", "server");
+            boxSenderPfad.Text = ini.Read("init", "VzSenderExe");
             //initialisieren der Felder, die die verbleibenden Zeichen für die Inserteingabe anzeigen
             insertZeile1verbleibend.Text = insertLine1.MaxLength.ToString();
             insertZeile2verbleibend.Text = insertLine2.MaxLength.ToString();
@@ -624,13 +627,17 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IniFile ini = new IniFile(".\\vzconfig.ini");
+            IniFile ini = new IniFile("C:\\vzconfig.ini");
             ini.Write("init", "server", textBoxServer.Text);
             ini.Write("init", "VzSenderExe", boxSenderPfad.Text);
 
             // Lesen mit ini.Read("init", "server"));
         }
 
+        public void SetServer(string servertemp)
+        {
+            this.textBoxServer.Text = servertemp;
+        }
         
 
       
